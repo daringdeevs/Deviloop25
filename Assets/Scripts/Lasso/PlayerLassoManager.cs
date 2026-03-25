@@ -8,9 +8,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization.SmartFormat.Extensions;
 using UnityEngine.Localization.SmartFormat.PersistentVariables;
+using InputSettings = Deviloop.InputSettings;
 
 public class PlayerLassoManager : MonoBehaviour
 {
@@ -56,6 +58,7 @@ public class PlayerLassoManager : MonoBehaviour
     private bool _startNewLine = false;
     private Coroutine clearCoroutine;
     private bool _isResolvingALoop = false;
+    private Camera _camera;
 
     // TODO: a more generic to handle values modified by relics
     private static int maxedAllowedItems;
@@ -80,6 +83,7 @@ public class PlayerLassoManager : MonoBehaviour
         var source = LocalizationSettings.StringDatabase.SmartFormatter.GetSourceExtension<PersistentVariablesSource>();
         MaxedAllowedItemsVariable = source["global"]["MaxedAllowedItems"] as IntVariable;
         MaxedAllowedItemsVariable.Value = 0;
+        _camera = Camera.main;
     }
 
     private void Start()
@@ -110,32 +114,11 @@ public class PlayerLassoManager : MonoBehaviour
         TurnManager.OnTurnChanged -= OnTurnChanged;
     }
 
-    private void OnTurnChanged(TurnManager.ETurnMode turnMode)
+    public void OnPointerDown(InputAction.CallbackContext context)
     {
-        if (turnMode != TurnManager.ETurnMode.Player)
-        {
-            _hasAlreadyDrawn = true;
-        }
-        else if (turnMode == TurnManager.ETurnMode.Player)
-        {
-            ClearLasso();
-        }
-    }
+        if (CanDrawLasso()) return;
 
-    private void OnPlayerDrawTurnStart()
-    {
-        ClearLasso();
-        _hasAlreadyDrawn = false;
-    }
-
-    private void Update()
-    {
-        if (!GameStateManager.Instance.CanPlayerDrawLasso || _hasAlreadyDrawn)
-        {
-            return;
-        }
-
-        if (Input.GetMouseButtonDown(0))
+        if (context.started)
         {
             StopCoroutine(InvertLasso());
             ClearLasso();
@@ -143,16 +126,39 @@ public class PlayerLassoManager : MonoBehaviour
             // TODO: a unified solution for changing time scale
             Time.timeScale = _slowMotionTimeScale;
         }
+    }
 
-        if (Input.GetMouseButton(0))
+    public void onPointerRelease(InputAction.CallbackContext context)
+    {
+        if (CanDrawLasso()) return;
+
+        if (context.canceled)
         {
-            if (!_startNewLine) return;
+            if (InputSettings.IsPointrerOverUI)
+            {
+                Time.timeScale = 1f;
+                ClearLasso();
+                return;
+            }
 
+            _startNewLine = false;
+            Time.timeScale = 1f;
+            StartCoroutine(InvertLasso());
+        }
+    }
+
+    private void Update()
+    {
+        if (CanDrawLasso()) return;
+        if (!_startNewLine) return;
+
+        if (Mouse.current != null && Mouse.current.leftButton.isPressed)
+        {
             _spellParticleSystem.gameObject.SetActive(true);
             if (!_spellParticleSystem.isPlaying)
                 _spellParticleSystem.Play();
 
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 mousePos = _camera.ScreenToWorldPoint(Mouse.current.position.value);
             _spellParticleSystem.transform.position = mousePos;
             if (_points.Count == 0 || Vector2.Distance(_points[^1], mousePos) > _pointSpacing)
             {
@@ -187,20 +193,34 @@ public class PlayerLassoManager : MonoBehaviour
                 }
             }
         }
+    }
 
-        if (Input.GetMouseButtonUp(0))
+    private bool CanDrawLasso()
+    {
+        if (!GameStateManager.Instance.CanPlayerDrawLasso || _hasAlreadyDrawn)
         {
-            if (InputSettings.IsPointrerOverUI)
-            {
-                Time.timeScale = 1f;
-                ClearLasso();
-                return;
-            }
-
-            _startNewLine = false;
-            Time.timeScale = 1f;
-            StartCoroutine(InvertLasso());
+            return true;
         }
+
+        return false;
+    }
+
+    private void OnTurnChanged(TurnManager.ETurnMode turnMode)
+    {
+        if (turnMode != TurnManager.ETurnMode.Player)
+        {
+            _hasAlreadyDrawn = true;
+        }
+        else if (turnMode == TurnManager.ETurnMode.Player)
+        {
+            ClearLasso();
+        }
+    }
+
+    private void OnPlayerDrawTurnStart()
+    {
+        ClearLasso();
+        _hasAlreadyDrawn = false;
     }
 
     private void ClearLasso(float dealy = 0)
@@ -273,7 +293,8 @@ public class PlayerLassoManager : MonoBehaviour
                     continue;
                 }
 
-                if (Vector2.Distance(lastPoint, _points[i]) < Vector2.Distance(lastPoint, _points[closestPointIndex]))
+                if (Vector2.Distance(lastPoint, _points[i]) <
+                    Vector2.Distance(lastPoint, _points[closestPointIndex]))
                 {
                     closestPointIndex = i;
                 }
@@ -354,7 +375,8 @@ public class PlayerLassoManager : MonoBehaviour
         if (GetPolygonArea(poly) < _loopMinArea || hits.Count <= 0 || hits.Count > maxedAllowedItems)
         {
             if (hits.Count > maxedAllowedItems)
-                MessageController.OnDisplayMessage?.Invoke($"Max allowed items is {maxedAllowedItems}. Try again!", 2);
+                MessageController.OnDisplayMessage?.Invoke($"Max allowed items is {maxedAllowedItems}. Try again!",
+                    2);
 
             Time.timeScale = 1f;
             Destroy(temp);

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace Deviloop
@@ -38,7 +39,7 @@ namespace Deviloop
         public void ShowTooltipUnderMouse(string content, bool shouldShowDuringLasso)
         {
             StopAllCoroutines();
-            StartCoroutine(ShowTooltip(content, Input.mousePosition, shouldShowDuringLasso));
+            StartCoroutine(ShowTooltip(content, Mouse.current.position.value, shouldShowDuringLasso));
         }
 
         private IEnumerator ShowTooltip(string content, Vector2 position, bool shouldShowDuringLasso)
@@ -86,7 +87,7 @@ namespace Deviloop
         {
             if (_tooltip.activeSelf)
             {
-                Vector2 position = Input.mousePosition;
+                Vector2 position = Mouse.current.position.value;
                 var canvasSize = _canvas.renderingDisplaySize;
                 if (position.x > canvasSize.x / 2)
                 {

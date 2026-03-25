@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization.SmartFormat.Extensions;
 using UnityEngine.Localization.SmartFormat.PersistentVariables;
@@ -167,6 +168,15 @@ namespace Deviloop
             else
             {
                 throwButton.gameObject.SetActive(false);
+            }
+        }
+
+        public void OnThrowKeyPressed(InputAction.CallbackContext context)
+        {
+            if (context.canceled)
+            {
+                if (InputSettings.AreAllInputBlocked || InputSettings.IsGameplayInputBlocked) return;
+                OnThrowButtonClicked();
             }
         }
 

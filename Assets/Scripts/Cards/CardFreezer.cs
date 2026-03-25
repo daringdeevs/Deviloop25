@@ -1,15 +1,28 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Deviloop
 {
     public class CardFreezer : MonoBehaviour
     {
-
         [SerializeField] private PlayerLassoManager _playerLassoManager;
         [SerializeField] private CardManager _cardManager;
 
         private static bool _isFrozen = false;
         public static bool IsCardFrozen => _isFrozen;
+
+        public void OnFreezeButtonCalled(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                if (InputSettings.AreAllInputBlocked || InputSettings.IsGameplayInputBlocked) return;
+                Freeze();
+            }
+            else if (context.canceled)
+            {
+                Unfreeze();
+            }
+        }
 
         public void ToggleCardFreeze()
         {
@@ -29,12 +42,11 @@ namespace Deviloop
 
         private bool CanFreeze()
         {
-
             if (PlayerLassoManager.HasAlreadyDrawn) return false;
             return true;
         }
 
-        public void Freeze()
+        private void Freeze()
         {
             if (CanFreeze() == false) return;
 
@@ -44,7 +56,7 @@ namespace Deviloop
             _cardManager.FreezeCards();
         }
 
-        public void Unfreeze()
+        private void Unfreeze()
         {
             Time.timeScale = 1f;
 

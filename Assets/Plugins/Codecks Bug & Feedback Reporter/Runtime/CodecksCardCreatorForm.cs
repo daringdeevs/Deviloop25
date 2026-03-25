@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.Text;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using InputSettings = Deviloop.InputSettings;
 
 namespace Codecks.Runtime
 {
@@ -35,11 +37,18 @@ namespace Codecks.Runtime
         private Texture2D screenshotTex;
         private byte[] queuedScreenshot;
 
+        public void OnShowFeedbackButtonCalled(InputAction.CallbackContext context)
+        {
+            if (context.performed) ShowCodecksForm();
+        }
+        
         /// <summary>
         /// Shows the Codecks Report Form.
         /// </summary>
         public void ShowCodecksForm()
         {
+            if (gameObject.activeInHierarchy) return;
+            
             InputSettings.AreAllInputBlocked = true;
             cardCreator.StartCoroutine(ShowCodecksFormCoroutine());
         }
@@ -54,7 +63,6 @@ namespace Codecks.Runtime
             Time.timeScale = 0f;
             screenshotTex = ScreenCapture.CaptureScreenshotAsTexture();
 
-            yield return new WaitForEndOfFrame();
             Time.timeScale = 1f;
 
 #if UNITY_STANDALONE
@@ -66,6 +74,7 @@ namespace Codecks.Runtime
 
             screenshotPreview.sprite = Sprite.Create(screenshotTex, new Rect(0, 0, screenshotTex.width, screenshotTex.height), new Vector2(0.5f, 0.5f));
 
+            yield return new WaitForEndOfFrame();
             textArea.text = defaultText;
             sendButton.interactable = true;
             gameObject.SetActive(true);
@@ -182,7 +191,5 @@ namespace Codecks.Runtime
             metaText.AppendLine("```");
             return metaText.ToString();
         }
-
-
     }
 }

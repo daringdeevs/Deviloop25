@@ -237,7 +237,9 @@ PrefabInstance:
       propertyPath: _onReleaseStartAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Unfreeze
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7603137315952821051, guid: addddb53cb93e124aa8be1de12f9e26a, type: 3}
+    - {fileID: 7289225607444020428, guid: addddb53cb93e124aa8be1de12f9e26a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -258,6 +260,10 @@ PrefabInstance:
     - target: {fileID: 1471165421731587253, guid: f217c3de7693b184f8e16eedce3ef9d6, type: 3}
       propertyPath: m_Name
       value: LassoManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5275249678738002183, guid: f217c3de7693b184f8e16eedce3ef9d6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7142599115855705853, guid: f217c3de7693b184f8e16eedce3ef9d6, type: 3}
       propertyPath: m_LocalPosition.x

@@ -132,9 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1871688503937795850}
   - component: {fileID: 7025005772330031540}
-  - component: {fileID: 7289225607444020428}
   - component: {fileID: 2116693146787820563}
-  - component: {fileID: 7603137315952821051}
   m_Layer: 0
   m_Name: CardManager
   m_TagString: Untagged
@@ -202,35 +200,6 @@ MonoBehaviour:
   enemyTurnDuration: 2
   HUDRaycaster: {fileID: 0}
   thrownCards: []
---- !u!114 &7289225607444020428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3771842613608920168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05c61f22f09913d4f836c42e8a104d5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Deviloop::Deviloop.GenericInputBinder
-  _keyCode: 32
-  _isGameplay: 1
-  _action:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7025005772330031540}
-        m_TargetAssemblyTypeName: Deviloop.CardManager, Deviloop
-        m_MethodName: OnThrowButtonClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &2116693146787820563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,47 +214,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: Deviloop::Deviloop.CardFreezer
   _playerLassoManager: {fileID: 0}
   _cardManager: {fileID: 7025005772330031540}
---- !u!114 &7603137315952821051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3771842613608920168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fff5c5269398b6e4888fa020701c985b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Deviloop::Deviloop.GenericInputHoldBinder
-  _keyCode: 9
-  _isGameplay: 1
-  _onHoldStartAction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2116693146787820563}
-        m_TargetAssemblyTypeName: Deviloop.CardFreezer, Deviloop
-        m_MethodName: ToggleCardFreeze
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onReleaseStartAction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2116693146787820563}
-        m_TargetAssemblyTypeName: Deviloop.CardFreezer, Deviloop
-        m_MethodName: ToggleCardFreeze
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2

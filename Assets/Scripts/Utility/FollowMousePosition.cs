@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Deviloop
 {
@@ -43,7 +44,7 @@ namespace Deviloop
 
             if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
                 canvasRect,
-                Input.mousePosition,
+                Mouse.current.position.value,
                 _uiCamera,
                 out Vector2 localPoint))
             {
@@ -53,7 +54,7 @@ namespace Deviloop
 
         private void FollowWorld()
         {
-            Vector3 mousePosition = Input.mousePosition;
+            Vector3 mousePosition = Mouse.current.position.value;
             mousePosition.z = Mathf.Abs(_mainCamera.transform.position.z);
 
             transform.position = _mainCamera.ScreenToWorldPoint(mousePosition);
