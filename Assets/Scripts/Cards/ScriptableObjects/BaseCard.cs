@@ -2,6 +2,8 @@ using FMODUnity;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
+using Deviloop.Cards.Animations;
 using UnityEngine;
 using UnityEngine.Localization;
 
@@ -71,7 +73,7 @@ namespace Deviloop
 
 
         // Abstract method that each card type must implement
-        public async Task UseCard(Action callback, CardPrefab cardPrefab)
+        public async UniTask UseCard(Action callback, CardPrefab cardPrefab)
         {
             CombatCharacter enemy = GetTargetEnemy();
 
@@ -105,12 +107,12 @@ namespace Deviloop
             }
         }
 
-        private async Task PlayAnimations(GameObject card, GameObject target = null)
+        private async UniTask PlayAnimations(GameObject card, GameObject target = null)
         {
             for (int i = 0; i < _animationType.Length; i++)
             {
                 CardAnimationType animation = _animationType[i];
-                if (i != _animationType.Length - 1 && animation.playWithNext)
+                if (i != _animationType.Length - 1 && animation._playWithNext)
                 {
                     animation.Play(card, target);
                     continue;

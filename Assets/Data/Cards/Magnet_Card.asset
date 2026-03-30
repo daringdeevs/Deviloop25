@@ -19,7 +19,9 @@ MonoBehaviour:
   _onLassoEffects:
   - rid: 4472579712933691491
   _onDropEffects: []
-  _animationType: []
+  _animationType:
+  - rid: 5637349636791337071
+  - rid: 5637349636791337072
   _extentionPrefab: {fileID: 8463951749944623439, guid: bd0b8c15ba0a07b40abd38fac1680b52, type: 3}
   TargetRandom: 0
   isConsumable: 0
@@ -64,3 +66,27 @@ MonoBehaviour:
     - rid: 4472579712933691491
       type: {class: RemoveComponentEffect, ns: Deviloop, asm: Deviloop}
       data: 
+    - rid: 5637349636791337071
+      type: {class: ScaleAnimation, ns: Deviloop.Cards.Animations, asm: Deviloop}
+      data:
+        _playWithNext: 0
+        _delayBeforeMove:
+          baseValue: 0.3
+        _delayAfterMove:
+          baseValue: 0.3
+        _scaleDuration:
+          baseValue: 0.5
+        _targetScaleMult: 2
+        _ease: 27
+    - rid: 5637349636791337072
+      type: {class: ScaleAnimation, ns: Deviloop.Cards.Animations, asm: Deviloop}
+      data:
+        _playWithNext: 0
+        _delayBeforeMove:
+          baseValue: 0.3
+        _delayAfterMove:
+          baseValue: 0.3
+        _scaleDuration:
+          baseValue: 0.5
+        _targetScaleMult: 0
+        _ease: 27

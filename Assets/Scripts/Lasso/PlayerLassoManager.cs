@@ -5,7 +5,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -354,9 +354,9 @@ public class PlayerLassoManager : MonoBehaviour
         DetectInsidePointsAsync(loopPoints);
     }
 
-    private async Task DetectInsidePointsAsync(List<Vector2> loopPoints)
+    private async UniTask DetectInsidePointsAsync(List<Vector2> loopPoints)
     {
-        await Task.Yield();
+        await UniTask.Yield();
 
         GameObject temp = new GameObject("TempCollider");
         PolygonCollider2D poly = temp.AddComponent<PolygonCollider2D>();
@@ -431,7 +431,7 @@ public class PlayerLassoManager : MonoBehaviour
             card.OnActivate();
 
             while (card.gameObject.activeInHierarchy)
-                await Task.Yield();
+                await UniTask.Yield();
         }
 
         Destroy(temp);
@@ -446,7 +446,7 @@ public class PlayerLassoManager : MonoBehaviour
         return originalCards;
     }
 
-    public async Task PutCardsInLineAsync(List<CardPrefab> originalCards)
+    public async UniTask PutCardsInLineAsync(List<CardPrefab> originalCards)
     {
         int count = originalCards.Count;
         if (count == 0) return;
@@ -458,7 +458,7 @@ public class PlayerLassoManager : MonoBehaviour
         {
             Vector3 targetPos = startPos + Vector3.right * (_cardsResolveDistance * i);
 
-            var rotateTween = originalCards[i].transform
+            var rotateTween =  originalCards[i].transform
                 .DORotate(Vector3.zero, _rotateDuration.Value)
                 .SetEase(Ease.OutCubic)
                 .AsyncWaitForCompletion();
@@ -468,7 +468,7 @@ public class PlayerLassoManager : MonoBehaviour
                 .SetEase(Ease.OutCubic)
                 .AsyncWaitForCompletion();
 
-            await Task.WhenAll(rotateTween, moveTween);
+            await UniTask.WhenAll(rotateTween.AsUniTask(), moveTween.AsUniTask());
         }
 
         await Awaitable.WaitForSecondsAsync(_waitBeforeApply.Value);

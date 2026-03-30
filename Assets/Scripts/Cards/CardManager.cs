@@ -3,6 +3,7 @@ using FMODUnity;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -190,7 +191,7 @@ namespace Deviloop
             OnPlayerClickedThrowButton?.Invoke();
         }
 
-        private async Task ThrowCardsSequence()
+        private async UniTask ThrowCardsSequence()
         {
             //using var ss = new DisposableLockUIInput(HUDRaycaster);
 

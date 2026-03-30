@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Localization;
 
@@ -21,7 +22,7 @@ namespace Deviloop
             }
         }
 
-        protected async Task AfterAction(Action callback)
+        protected async UniTask AfterAction(Action callback)
         {
             await Awaitable.WaitForSecondsAsync(actionDuration.Value);
             callback?.Invoke();

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization.SmartFormat.Extensions;
@@ -112,7 +113,7 @@ namespace Deviloop
             CombatTargetSelection.SetTargetAction?.Invoke(SpawnedEnemies[0]);
         }
 
-        private async Task SpawnEnemies(EnemyType[] enemyTypes)
+        private async UniTask SpawnEnemies(EnemyType[] enemyTypes)
         {
             int numberOfEnemiesToSpawn = enemyTypes.Sum(et => et.Quantity);
 

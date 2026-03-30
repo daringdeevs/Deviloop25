@@ -1,5 +1,5 @@
-using System.Collections;
-using System.Threading.Tasks;
+using System.Threading;
+using Cysharp.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 
@@ -16,37 +16,40 @@ namespace Deviloop
     public class DamageIndicator : MonoBehaviour, IPoolable
     {
         [SerializeField] private TextMeshProUGUI _text;
-        [SerializeField] private Animator animator;
+        [SerializeField] private Animator _animator;
         [SerializeField] private DamageTypeSettings[] _damageTypeSettings;
+
+        private CancellationTokenSource cts = new CancellationTokenSource();
 
         [System.Serializable]
         public struct DamageTypeSettings
         {
-            public Color color;
-            public DamageType damageType;
+            public Color _color;
+            public DamageType _damageType;
         }
 
-        public void Setup(int amount, float _destroyAfter, DamageType damageType)
+        public void Setup(int amount, float destroyAfter, DamageType damageType)
         {
-            _text.color = System.Array.Find(_damageTypeSettings, setting => setting.damageType == damageType).color;
+            _text.color = System.Array.Find(_damageTypeSettings, setting => setting._damageType == damageType)._color;
 
             _text.text = amount.ToString();
-            if (_destroyAfter <= 0)
+            if (destroyAfter <= 0)
             {
-                _destroyAfter = 1f;
+                destroyAfter = 1f;
             }
             else
             {
-                animator.speed = 1f / _destroyAfter;
+                _animator.speed = 1f / destroyAfter;
 
             }
-
-            DestroyDamageIndicator(_destroyAfter);
+            
+            cts = new CancellationTokenSource();
+            DestroyDamageIndicator(destroyAfter);
         }
 
-        private async Task DestroyDamageIndicator(float _destroyAfter)
+        private async UniTask DestroyDamageIndicator(float destroyAfter)
         {
-            await Awaitable.WaitForSecondsAsync(_destroyAfter);
+            await Awaitable.WaitForSecondsAsync(destroyAfter).WithCancellation(cts.Token);
             PoolManager.Instance.GetPool(this).ReturnToPool(this);
         }
 
@@ -56,6 +59,7 @@ namespace Deviloop
 
         public void OnDespawned()
         {
+            cts.Cancel();
         }
     }
 }

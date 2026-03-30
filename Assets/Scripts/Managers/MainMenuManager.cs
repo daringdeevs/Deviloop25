@@ -30,7 +30,7 @@ namespace Deviloop
         {
             using (new DisposableStopwatch("gameplay scene load"))
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+                UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(1);
             }
         }
     }

@@ -5,7 +5,7 @@ namespace Deviloop
 {
     public class GameInitiator : MonoBehaviour
     {
-        async void Start()
+        private async void Start()
         {
             await DoSth();
         }

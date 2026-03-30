@@ -18,9 +18,10 @@ MonoBehaviour:
   _cardEffects:
   - rid: 4472579520941785480
   _onLassoEffects: []
+  _onDropEffects: []
   _animationType:
-  - rid: 4472579520941785481
-  - rid: 4472579520941785538
+  - rid: 5637349636791337076
+  - rid: 5637349636791337077
   _extentionPrefab: {fileID: 0}
   TargetRandom: 0
   isConsumable: 0
@@ -67,26 +68,26 @@ MonoBehaviour:
       data:
         damage: 2
         AttackType: 0
-    - rid: 4472579520941785481
-      type: {class: RotateAnimation, ns: Deviloop, asm: Deviloop}
+    - rid: 5637349636791337076
+      type: {class: ScaleAnimation, ns: Deviloop.Cards.Animations, asm: Deviloop}
       data:
-        playWithNext: 1
-        DelayBeforeMove:
+        _playWithNext: 0
+        _delayBeforeMove:
           baseValue: 0.3
-        DelayAfterMove:
-          baseValue: 0.3
-        _rotateDuration:
-          baseValue: 0.5
-        rounds: 5
-    - rid: 4472579520941785538
-      type: {class: ScaleAnimation, ns: Deviloop, asm: Deviloop}
-      data:
-        playWithNext: 0
-        DelayBeforeMove:
-          baseValue: 0.3
-        DelayAfterMove:
+        _delayAfterMove:
           baseValue: 0.3
         _scaleDuration:
           baseValue: 0.5
         _targetScaleMult: 2
         _ease: 27
+    - rid: 5637349636791337077
+      type: {class: RotateAnimation, ns: Deviloop.Cards.Animations, asm: Deviloop}
+      data:
+        _playWithNext: 0
+        _delayBeforeMove:
+          baseValue: 0.3
+        _delayAfterMove:
+          baseValue: 0.3
+        _rotateDuration:
+          baseValue: 1
+        _rounds: 8

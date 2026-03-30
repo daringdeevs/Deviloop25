@@ -2,6 +2,7 @@ using Deviloop;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -82,7 +83,7 @@ public class Enemy : CombatCharacter, IPointerDownHandler, IPoolable
         OnIntentionChanged?.Invoke(currentAction);
     }
 
-    public async Task TakeNextActionAsync()
+    public async UniTask TakeNextActionAsync()
     {
         if (currentAction == null || IsDead())
             return;
@@ -98,13 +99,13 @@ public class Enemy : CombatCharacter, IPointerDownHandler, IPoolable
         await ExecuteActionAsync();
     }
 
-    private Task ExecuteActionAsync()
+    private UniTask ExecuteActionAsync()
     {
-        var tcs = new TaskCompletionSource<bool>();
+        var tcs = new UniTaskCompletionSource<bool>();
 
         currentAction.TakeAction(this, () =>
         {
-            tcs.SetResult(true);
+            tcs.TrySetResult(true);
         });
 
         return tcs.Task;

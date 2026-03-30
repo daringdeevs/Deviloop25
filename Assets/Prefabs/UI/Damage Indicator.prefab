@@ -258,9 +258,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Deviloop::Deviloop.DamageIndicator
   _text: {fileID: 8542919352373442967}
-  animator: {fileID: 1945803048600973110}
+  _animator: {fileID: 1945803048600973110}
   _damageTypeSettings:
-  - color: {r: 1, g: 0.023584902, b: 0.023584902, a: 1}
-    damageType: 0
-  - color: {r: 0.10849059, g: 0.22393757, b: 1, a: 1}
-    damageType: 3
+  - _color: {r: 1, g: 0.47743246, b: 0.4669811, a: 1}
+    _damageType: 0
+  - _color: {r: 0.514151, g: 0.5751202, b: 1, a: 1}
+    _damageType: 3
