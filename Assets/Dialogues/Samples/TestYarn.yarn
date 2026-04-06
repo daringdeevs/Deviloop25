@@ -1,10 +1,10 @@
-// here learn about: Nodes and Lines, Options, Jump Command
+﻿// here learn about: Nodes and Lines, Options, Jump Command
 title: Start
 position: 12,12
 cluster: MainTopics
 ---
 <<declare $N = "Reginald the Wizard">>
-Once upon a time...
+Once upon a time... #line:01912a5 
 Player: Hello there {$N}!#line:0a86b94 
 NPC: Oh, hello! How can I help you today? #line:07afdd5 
 -> I need information. #line:0a52c6d 

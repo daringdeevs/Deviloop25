@@ -1,42 +1,42 @@
-// here learn about: Detour with return
+﻿// here learn about: Detour with return
 title: Guard
 position: 12,12
 ---
-Guard: Have I told you my backstory?
+Guard: Have I told you my backstory? #line:0632c56 
 
--> Yes.
-    Guard: Oh. Well, then.
--> No?
+-> Yes. #line:060e9b4 
+    Guard: Oh. Well, then. #line:08ebd83 
+-> No? #line:0a05e98 
     <<detour Guard_Backstory>>
 
-Guard: Anyway, you can't come in.
+Guard: Anyway, you can't come in. #line:0d747eb 
 ===
 
 title: Guard_Backstory
 position: 12,237
 ---
-Guard: Do you want the detailed version or the short version?
+Guard: Do you want the detailed version or the short version? #line:0286216 
 
--> Detailed.
+-> Detailed. #line:095e392 
     <<detour Guard_Detailed_Backstory>>
-    Guard: I hope you enjoyed learning all that.. Anyway...
--> Short.
-    Guard: Right, well, I was a recruit, then I wasn't.
+    Guard: I hope you enjoyed learning all that.. Anyway... #line:07075ae 
+-> Short. #line:0057901 
+    Guard: Right, well, I was a recruit, then I wasn't. #line:0487ebd 
 ===
 
 title: Guard_Detailed_Backstory
 position: 12,462
 ---
-Guard: It all started when I was a mere recruit.
+Guard: It all started when I was a mere recruit. #line:02a2cb8 
 
 // (five minutes of exposition omitted)
 // (other stuff happens)
 
-Guard: Want to hear more?
+Guard: Want to hear more? #line:0d84a55 
 
--> Yes.
--> No.
+-> Yes. #line:06641f7 
+-> No. #line:07eee28 
     <<return>>
 
-Guard: (speaks more garbage)
+Guard: (speaks more garbage) #line:0dd41ec 
 ===

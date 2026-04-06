@@ -1,4 +1,4 @@
-title: VariableExample
+﻿title: VariableExample
 ---
 
 /// The name of the player.
@@ -18,6 +18,6 @@ title: VariableExample
 <<set $aString = string($aNumber)>>
 
 // using the variable in a line
-The value of variableName is {$aString}.
+The value of variableName is {$aString}. #line:0a0ac97 
 
 ===

@@ -18,8 +18,16 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 61262853353472
-    m_Localized: Kauf etwas oder lass mich in Ruhe!
+  - m_Id: 36309642252169216
+    m_Localized: Ja.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169218
+    m_Localized: Nein?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169217
+    m_Localized: 
     m_Metadata:
       m_Items: []
   references:

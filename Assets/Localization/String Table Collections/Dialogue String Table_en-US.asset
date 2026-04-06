@@ -18,8 +18,116 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 61262853353472
-    m_Localized: buy something or leave me alone!
+  - m_Id: 36309642235392000
+    m_Localized: 'Guard: Have I told you my backstory?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169216
+    m_Localized: Yes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169217
+    m_Localized: 'Guard: Oh. Well, then.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169218
+    m_Localized: No?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169219
+    m_Localized: 'Guard: Anyway, you can''t come in.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169220
+    m_Localized: 'Guard: Do you want the detailed version or the short version?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169221
+    m_Localized: Detailed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169222
+    m_Localized: 'Guard: I hope you enjoyed learning all that.. Anyway...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169223
+    m_Localized: Short.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169224
+    m_Localized: 'Guard: Right, well, I was a recruit, then I wasn''t.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169225
+    m_Localized: 'Guard: It all started when I was a mere recruit.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169226
+    m_Localized: 'Guard: Want to hear more?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169227
+    m_Localized: Yes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169228
+    m_Localized: No.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169229
+    m_Localized: 'Guard: (speaks more garbage)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169230
+    m_Localized: Once upon a time...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169231
+    m_Localized: 'Player: Hello there {0}!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169232
+    m_Localized: 'NPC: Oh, hello! How can I help you today?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169233
+    m_Localized: I need information.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169234
+    m_Localized: 'NPC: What would you like to know?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169235
+    m_Localized: I'm just browsing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169236
+    m_Localized: 'NPC: Feel free to look around!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169237
+    m_Localized: Actually, I should go.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169238
+    m_Localized: 'NPC: No problem. Come back anytime!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169239
+    m_Localized: 'Player: Thanks for your help!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169240
+    m_Localized: 'NPC: You''re welcome! Have a nice day!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169241
+    m_Localized: 'TODO: Add more dialogue options for the NPC.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36309642252169242
+    m_Localized: The value of variableName is {0}.
     m_Metadata:
       m_Items: []
   references:
