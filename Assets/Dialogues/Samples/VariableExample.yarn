@@ -1,0 +1,23 @@
+title: VariableExample
+---
+
+/// The name of the player.
+<<declare $playerName = "Reginald the Wizard">>
+/// The number of gold pieces that the player has.
+<<declare $gold = 42>>
+/// Is the door to the dungeon unlocked?
+<<declare $doorUnlocked = false>>
+
+// Now change them!
+<<set $gold to 8>>
+<<set $playerName to "incredible!">>
+
+// parsing
+<<declare $aNumber = 42>>
+<<declare $aString = "This is my string.">>
+<<set $aString = string($aNumber)>>
+
+// using the variable in a line
+The value of variableName is {$aString}.
+
+===

@@ -1,0 +1,35 @@
+// here learn about: Nodes and Lines, Options, Jump Command
+title: Start
+position: 12,12
+cluster: MainTopics
+---
+<<declare $N = "Reginald the Wizard">>
+Once upon a time...
+Player: Hello there {$N}!#line:0a86b94 
+NPC: Oh, hello! How can I help you today? #line:07afdd5 
+-> I need information. #line:0a52c6d 
+    NPC: What would you like to know? #line:03df488 
+-> I'm just browsing. #line:045003a 
+    NPC: Feel free to look around! #line:024cad6 
+-> Actually, I should go. #line:0e14143 
+    NPC: No problem. Come back anytime! #line:05d4ff3 
+    <<jump End>>
+===
+
+title: End
+position: 12,237
+cluster: MainTopics
+---
+Player: Thanks for your help! #line:04212aa 
+NPC: You're welcome! Have a nice day! #line:07994f8 
+===
+// this is a comment!
+
+title: Note_Reminder
+style: note
+color: red
+position: 309,42
+cluster: MainTopics
+---
+TODO: Add more dialogue options for the NPC. #line:076f034 
+===
