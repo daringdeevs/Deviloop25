@@ -1,0 +1,18 @@
+﻿// Shadow lines are copies of other lines, but don’t create a duplicate entry in the string table.
+// The script contains six lines, but only 5 string table entries will be created, because the line “I should go” is shadowed.
+
+title: Tavern
+position: 12,12
+---
+Ava: Hello, barkeep!   #line:053cd8e 
+Guy: Hi there, how can I help?  #line:0491a87 
+Ava: I should go. #line:departure
+===
+
+title: Kitchen
+position: 12,157
+---
+Ava: Greetings, chef! #line:044b85d 
+Guy: What are you doing back here?  #line:0f7e150 
+Ava: I should go. #shadow:departure
+===

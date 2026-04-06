@@ -21,6 +21,12 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8704e561b2f735042b5d3ddbf46021fe
+    m_Address: Assets/Localization/String Table Collections/Yarn Samples Dialogues
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b9ce7a0ae83848d49ba09c791e109edf
     m_Address: Assets/Localization/String Table Collections/Gameplay String Table
       Shared Data.asset

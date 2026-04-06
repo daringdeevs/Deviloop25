@@ -4,11 +4,15 @@
     "**/*.yarn"
   ],
   "excludeFiles": [],
-  "localisation": {
-    "en": {}
-  },
+  "localisation": {},
   "baseLanguage": "en-US",
   "compilerOptions": {
     "allowPreviewFeatures": true
-  }
+  },
+  "editorOptions": {
+    "yarnScriptEditor": {
+      "previewFontSize": 8
+    }
+  },
+  "projectName": "Sample Project"
 }

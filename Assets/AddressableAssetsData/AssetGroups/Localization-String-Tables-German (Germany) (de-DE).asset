@@ -34,6 +34,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-de-DE
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9277a9a8bf8f91a43b035fb5d6d4c823
+    m_Address: Yarn Samples Dialogues_de-DE
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de-DE
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: cb6edf4b84f56374d95dc4f45156e09a, type: 2}
   m_SchemaSet:

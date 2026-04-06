@@ -1,15 +1,15 @@
-﻿title: VariableExample
+title: Variable_Example
 ---
 
 /// The name of the player.
 <<declare $playerName = "Reginald the Wizard">>
 /// The number of gold pieces that the player has.
-<<declare $gold = 42>>
+<<declare $luck = 42>>
 /// Is the door to the dungeon unlocked?
 <<declare $doorUnlocked = false>>
 
 // Now change them!
-<<set $gold to 8>>
+<<set $luck to 8>>
 <<set $playerName to "incredible!">>
 
 // parsing

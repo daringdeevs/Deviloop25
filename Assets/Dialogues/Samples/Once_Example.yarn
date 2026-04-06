@@ -1,0 +1,54 @@
+﻿title: Once_Example
+position: 490,0
+---
+<<declare $caves = false>>
+<<declare $castle = false>>
+<<declare $gold = 0>>
+
+Narrator: You make your way into a new town... <<once>> #line:089141c 
+Narrator: Where are you heading?  #line:0965dd3 
+-> Caves! <<if !$caves>> #line:0e893d2 
+    <<jump Caves>>
+-> Ruined castle! <<if !$castle>> #line:096ec72 
+    <<jump Castle>>
+-> Leave town. <<if $castle and $caves>> #line:08922b6 
+===
+
+title: Caves
+position: 232,237
+---
+<<once>>
+    Narrator: You make your way into the forboding caves. #line:0061e15 
+<<else>>
+    Narrator: The blackness of the caves beckons... #line:02684cd 
+<<endonce>>
+Narrator: Go deeper? #line:096c2c7 
+-> Yes. #line:0b487d1 
+    Narrator: You push deeper into the black. #line:0e6628d 
+    Narrator: You find a pile of gold! #line:0ca6a76 
+    <<set $gold = $gold + 100>>
+    Narrator: You return to town with your riches. #line:0e69a7a 
+    <<set $caves = true>>
+    <<jump Once_Example>>
+-> No. #line:00e6686 
+    Narrator: The caves are scary. <<once>> #line:02aa093 
+    Narrator: Back to town! #line:01b0e3e 
+    <<jump Once_Example>>
+===
+
+title: Castle
+position: 512,237
+---
+Narrator: You wander into the ruined castle... #line:0964bbe 
+Narrator: With your gold, you'd best keep your wits about you. <<once if $gold > 0>> #line:0de341e 
+Narrator: Unfortunately, there's nothing of interest here... #line:08dd686 
+<<set $castle = true>>
+Narrator: You head back to town! #line:08090e0 
+<<jump Once_Example>>
+===
+
+title: Leave
+position: 9,50
+---
+Narrator: You wander off, in search of your next adventure. #line:01133de 
+===

@@ -1,0 +1,30 @@
+﻿title: Functions_Example
+---
+// Built-in funcitons:
+
+// Inside an if statement:
+<<if dice(6) == 6>>
+    You rolled a six! #line:0c3e67e 
+<<endif>>
+
+// Inside a line:
+Gambler: My lucky number is {random_range(1,10)}! #line:044a354 
+
+// Other build-in functions:
+// visited(string node_name)
+// visited_count(string node_name)
+// format_invariant(number n)
+// random()
+// random_range(number a, number b)
+// dice(number sides)
+// min(number a, number b)
+// max(number a, number b)
+// round(number n)
+// round_places(number n, number places)
+// floor(number n)
+// ceil(number n)
+// inc(number n)
+// dec(number n)
+// decimal(number n)
+// int(number n)
+===

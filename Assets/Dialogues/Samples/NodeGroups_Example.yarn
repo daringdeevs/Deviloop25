@@ -1,0 +1,22 @@
+﻿title: Guard
+when: once
+---
+Guard: You there, traveler! #line:0daddae 
+Player: Who, me? #line:092bef5 
+Guard: Yes! Stay off the roads after dark! #line:09999c6 
+<<jump Guard>>
+===
+title: Guard
+position: 26,-61
+when: always
+---
+Guard: I hear the king has a new advisor. #line:0c2ac07 
+<<set  $has_sword to true>>
+<<jump Guard>>
+===
+title: Guard
+position: 26,-61
+when: $has_sword
+---
+Guard: No weapons allowed in the city! #line:01b0a1c 
+===

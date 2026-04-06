@@ -1,0 +1,19 @@
+﻿title: Markup_Example
+---
+<<declare $gender = "m">>
+
+Oh, [wave]hello[/wave] there! #line:0848647 
+Oh, [wave]hello [bounce]there![/bounce][/wave] #line:00e2fda 
+// Self-closing Attributes
+[wave/] hello! #line:0ccdebf 
+// close-all marker
+[wave][bounce]Hello![/] #line:092836f 
+// properties
+[wave size=2]Wavy![/wave] #line:010c882 
+
+[nomarkup]Here's a big ol' [ bunch of ] characters, filled [[]] with square [[] brackets![/nomarkup] #line:02c2703 
+
+// In this example, the $gender variable is a string that
+// contains either "m", "f", or "nb".
+I think [select value={$gender} m="he" f="she" nb="they" /] will be there! #line:0078250 
+===

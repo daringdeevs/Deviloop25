@@ -1,0 +1,32 @@
+﻿title: Enum_Example
+position: 12,12
+---
+<<enum Weapon>>
+    <<case None>>
+    <<case Sword>>
+    <<case Crossbow>>
+    <<case PointyStick>>
+<<endenum>>
+
+<<declare $weapon = Weapon.None>>
+
+Vendor: Do you want to buy a weapon? #line:0804cb4 
+-> Yes! I'll take the Sword. #line:046f16d 
+    Vendor: OK! Here's your sword. #line:0d24fc6 
+    <<set $weapon = Weapon.Sword>>
+-> Yes, I want a crossbow. #line:06c5245 
+    Vendor: Here's a crossbow! #line:056a574 
+    <<set $weapon = Weapon.Crossbow>>
+-> Yes, but just a pointy stick, please. #line:0de3d1a 
+    Vendor: One stick, coming right up. #line:066d505 
+    <<set $weapon = Weapon.PointyStick>>
+    <<if $weapon == Weapon.Sword>>
+        Townsperson: Ooh, a big fancy adventurer with their big fancy sword! #line:0071e7c 
+    <<elseif $weapon == Weapon.Crossbow>>
+        Townsperson: Don't bring that crossbow near me, adventurer! #line:07eff98 
+    <<elseif $weapon == Weapon.PointyStick>>
+        Townsperson: An adventurer with a stick! Hahah! #line:05f9c78 
+    <<else>>
+        Townsperson: An adventurer with no weapon?! #line:0eea4fe 
+    <<endif>>
+===

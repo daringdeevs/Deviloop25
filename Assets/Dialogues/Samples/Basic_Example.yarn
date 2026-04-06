@@ -1,0 +1,43 @@
+﻿// here learn about: Nodes and Lines, Options, Jump Command
+title: Start
+position: 232,12
+cluster: MainTopics
+---
+<<declare $N = "Reginald the Wizard">>
+Once upon a time... #line:01912a5 
+Player: Oh, [wave]hello[/wave] there {$N}!#line:0a86b94 
+NPC: Oh, hello! How can I help you today? #line:07afdd5 
+-> Show me the "Detour" example. #line:0a52c6d 
+    NPC: Jumping to the detour example!!  #line:01e9bb8 
+    <<jump Detour_Example>>
+-> Show me the "Flow Control" example. #line:045003a 
+    NPC: Jumping to the "flow control" example!! #line:024cad6
+    <<jump FlowControl_Example_1>>
+-> Show me the "Once" example!! #line:091e714 
+    NPC: Jumping to the "Once" example!! #line:06bf719 
+    <<jump Once_Example>>
+-> Show me the "Variables" example!! #line:0342426 
+    NPC: Jumping to the "Variables" example!! #line:0641a03 
+    <<jump Variable_Example>>
+-> Actually, I should go. #line:0e14143 
+    NPC: No problem. Come back anytime! We have even more examples to check! #line:05d4ff3 
+    <<jump End>>
+===
+
+title: End
+position: 232,237
+cluster: MainTopics
+---
+Player: Thanks for your help! #line:04212aa 
+NPC: You're welcome! Have a nice day! #line:07994f8 
+===
+// this is a comment!
+
+title: Note_Reminder
+style: note
+color: red
+position: 12,12
+cluster: MainTopics
+---
+TODO: Add more dialogue options for the NPC. #line:076f034 
+===

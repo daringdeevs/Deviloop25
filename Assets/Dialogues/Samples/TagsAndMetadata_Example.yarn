@@ -1,0 +1,12 @@
+﻿// A tag is a piece of information that you can add to content in Yarn Spinner that adds additional context or detail about that content.
+title: TagsAndMetadata_Example
+---
+Homer: Hi, I'd like to order a tire balancing. #tone:sarcastic #duplicate #line:03ec95e 
+===
+
+title: NodeTag
+tags: #camera2 background:conductor_cabin
+---
+Why did you stop the train? #line:0c487ed 
+Now we won't arrive in time at the next stop! #line:090be45 
+===

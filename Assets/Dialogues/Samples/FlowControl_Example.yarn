@@ -1,0 +1,60 @@
+﻿title: FlowControl_Example_1
+position: 8,-41
+---
+// Conditional example
+<<declare $gold_amount = 0>>
+<<set $gold_amount to 5>>
+
+Player: I'd like to buy a pie! #line:0985cb2 
+
+<<if $gold_amount < 10>>
+    Baker: Well, you can't afford one! #line:0e88bc0 
+<<elseif $gold_amount < 15>>
+    Baker: You can almost afford one! #line:0cdd49f 
+<<else>>
+    Baker: You can afford a pie! #line:0d901f9 
+<<endif>>
+
+===
+title: FlowControl_Example_2
+position: 264,-34
+---
+// Conditional Options example
+Guard: You're not allowed in! #line:09bdd54 
+-> Sure I am! The boss knows me! <<if $reputation > 10>> #line:0b7490f 
+-> Please? #line:0b7eae1 
+-> I'll come back later. #line:0288c2b 
+===
+
+// Fallback Content in Options
+title: FlowControl_Example_3
+position: 45,157
+cluster: Fallback
+---
+Guard: Who goes there? #line:03a04c7 
+
+// If the player is a thief, a royal visitor, or a merchant, then
+// go run the appropriate conversation for that. The player might be
+// some combination of the three, so let them choose.
+-> A thief! <<if $player_is_thief>> #line:0a929ac 
+    <<jump Guard_Thief_Conversation>>
+-> A merchant! <<if $player_is_merchant>> #line:06f8431 
+    <<jump Guard_Merchant_Conversation>>
+
+// But if the player is NONE of those, then none of the options would have
+// been available. We'll fall through to here.
+
+Player: I'm nobody! #line:01aca6a 
+===
+title: Guard_Thief_Conversation
+position: 12,382
+cluster: Fallback
+---
+Guard: get the thief! #line:0cacd76 
+===
+title: Guard_Merchant_Conversation
+position: 292,382
+cluster: Fallback
+---
+Guard: what are you selling? #line:0917496 
+===

@@ -1,0 +1,48 @@
+﻿// Line groups are collections of lines that begin with a => symbol:
+// Line groups are great for running ‘barks’ - collections of short lines that need to run in response to an in-game event.
+title: LineGroups_Example
+position: 45,12
+---
+<<declare $usedToBePirate = false>>
+// Narrator asks a question
+Narrator: Did you used to be a space pirate? #line:0a428fe 
+-> Yes. #line:0ec1460 
+    <<set $usedToBePirate = true>>
+-> Nah. #line:0f5eb7b 
+
+// Onwards to space (presumably)...
+=> Pirate: Arr! I'm a space pirate! #line:0c93ea5 
+    Pirate: Give me all the space money! #line:006112b 
+=> Pirate: Give me your space money! I'm a space pirate! #line:001703f 
+=> Pirate: Yarr! Your space money or your life! #line:05f690a 
+=> Pirate: Arr, you look like me old crewmate! <<if $usedToBePirate>> #line:0c7b68a 
+    Pirate: Yarr, I'm still gonna rob yeh! #line:0b27d2c 
+=> Pirate: You may have left the pirate life, but I'll still be robbin' yeh! <<if $usedToBePirate>> #line:0051a8c 
+
+Player: Oh no! A space pirate! #line:002c13d 
+-> Hand over your (space) money. #line:0d18854 
+    <<jump Robbery>>
+-> Ignore them. #line:05e21b4 
+    <<jump Ignore>>
+===
+
+title: Robbery
+position: 12,237
+---
+=> Pirate: I'll take all your money! Yarr! #line:0536a4d 
+=> Pirate: All the space money! Now! #line:09ac325 
+=> Pirate: Gimme half your money! <<if $usedToBePirate>> #line:044e39e 
+    Pirate: On account of yeh be an old crewmate.  #line:0ffbc2b 
+    Pirate: Yeh understand? Just a one-time thing. #line:03481b7 
+Player: Oh no, I was robbed! #line:0b34078 
+===
+
+title: Ignore
+position: 292,237
+---
+Narrator: You run... #line:0360ff7 
+=> Pirate: Yarr, you escaped me this time! #line:0c41274 
+=> Pirate: Arr! I'll let you go. <<if $usedToBePirate>> #line:092f51f 
+    Pirate: But only this once. #line:09846d1 
+    Pirate: And only because you were once a pirate! #line:0acd0f3 
+===

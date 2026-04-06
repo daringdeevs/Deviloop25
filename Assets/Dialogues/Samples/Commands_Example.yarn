@@ -1,0 +1,21 @@
+﻿title: Commands_Example
+---
+// There are some built-in commands:
+Let's go! #line:03c7129 
+// Wait for 2 seconds
+<<wait 2>>
+Hey hey! #line:036bc05 
+// Wait for half a second
+<<wait 0.5>>
+Hey again! #line:006e386 
+// Leave the dialogue now
+<<stop>>
+
+// Leave the dialogue if we don't have enough money
+<<if $money < 50>>
+    Shopkeeper: You can't afford my pies! #line:03bad1c 
+    <<stop>>
+<<endif>>
+===
+
+// You can make your own Unity C# commands and call them in similar way

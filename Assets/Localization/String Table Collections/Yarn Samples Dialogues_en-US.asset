@@ -1,0 +1,1110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Yarn Samples Dialogues_en-US
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 8704e561b2f735042b5d3ddbf46021fe, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 41999446016
+    m_Localized: Once upon a time...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42028806144
+    m_Localized: 'Player: Oh, [wave]hello[/wave] there {0}!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42028806145
+    m_Localized: 'NPC: Oh, hello! How can I help you today?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42028806146
+    m_Localized: Show me the "Detour" example.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42028806147
+    m_Localized: 'NPC: What would you like to know?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42028806148
+    m_Localized: Show me the "Flow Control" example.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42028806149
+    m_Localized: 'NPC: Jumping to the "flow control" example!!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42028806150
+    m_Localized: Actually, I should go.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42028806151
+    m_Localized: 'NPC: No problem. Come back anytime! We have even more examples
+      to check!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42028806152
+    m_Localized: 'Player: Thanks for your help!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42028806153
+    m_Localized: 'NPC: You''re welcome! Have a nice day!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42028806154
+    m_Localized: 'TODO: Add more dialogue options for the NPC.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42028806155
+    m_Localized: 'Guard: Have I told you my backstory?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000448
+    m_Localized: Yes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000449
+    m_Localized: 'Guard: Oh. Well, then.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000450
+    m_Localized: No?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000451
+    m_Localized: 'Guard: Anyway, you can''t come in.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000452
+    m_Localized: 'Guard: Do you want the detailed version or the short version?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000453
+    m_Localized: Detailed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000454
+    m_Localized: 'Guard: I hope you enjoyed learning all that.. Anyway...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000455
+    m_Localized: Short.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000456
+    m_Localized: 'Guard: Right, well, I was a recruit, then I wasn''t.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000457
+    m_Localized: 'Guard: It all started when I was a mere recruit.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000458
+    m_Localized: 'Guard: Want to hear more?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000459
+    m_Localized: Yes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000460
+    m_Localized: No.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000461
+    m_Localized: 'Guard: (speaks more garbage)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42033000462
+    m_Localized: The value of variableName is {0}.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1473309880320
+    m_Localized: 'Player: I''d like to buy a pie!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1473309880321
+    m_Localized: 'Baker: Well, you can''t afford one!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5195293306880
+    m_Localized: 'Player: I''d like to buy a pie!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5195293306881
+    m_Localized: 'Baker: Well, you can''t afford one!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5195293306882
+    m_Localized: 'Baker: You can almost afford one!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5195293306883
+    m_Localized: 'Baker: You can afford a pie!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5195293306884
+    m_Localized: 'Guard: You''re not allowed in!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5195293306885
+    m_Localized: Sure I am! The boss knows me!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5195293306886
+    m_Localized: Please?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5195293306887
+    m_Localized: I'll come back later.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5195293306888
+    m_Localized: 'Guard: Who goes there?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5195293306889
+    m_Localized: A thief!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5195293306890
+    m_Localized: A merchant!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5195293306891
+    m_Localized: 'Player: I''m nobody!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5195293306892
+    m_Localized: 'Guard: get the thief!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5195293306893
+    m_Localized: 'Guard: what are you selling?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268960
+    m_Localized: Now we won't arrive in time at the next stop!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268959
+    m_Localized: Why did you stop the train?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268958
+    m_Localized: 'Homer: Hi, I''d like to order a tire balancing.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268957
+    m_Localized: 'Innkeeper: Most shops are closed now, but you''re welcome to stay
+      here for the night.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268956
+    m_Localized: 'Craftsman: Your carpentry skills aren''t quite there yet.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746181
+    m_Localized: 'Player: I''d like to buy a pie!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746182
+    m_Localized: 'Baker: Well, you can''t afford one!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746183
+    m_Localized: 'Baker: You can almost afford one!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746184
+    m_Localized: 'Baker: You can afford a pie!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746185
+    m_Localized: 'Guard: You''re not allowed in!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746186
+    m_Localized: Sure I am! The boss knows me!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746187
+    m_Localized: Please?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746188
+    m_Localized: I'll come back later.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746189
+    m_Localized: 'Guard: Who goes there?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746190
+    m_Localized: A thief!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746191
+    m_Localized: A merchant!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746192
+    m_Localized: 'Player: I''m nobody!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746193
+    m_Localized: 'Guard: get the thief!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746194
+    m_Localized: 'Guard: what are you selling?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746195
+    m_Localized: 'Narrator: You make your way into a new town...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746196
+    m_Localized: 'Narrator: Where are you heading?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746197
+    m_Localized: Caves!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746198
+    m_Localized: Ruined castle!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746199
+    m_Localized: Leave town.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746200
+    m_Localized: 'Narrator: You make your way into the forboding caves.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746201
+    m_Localized: 'Narrator: The blackness of the caves beckons...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746202
+    m_Localized: 'Narrator: Go deeper?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746203
+    m_Localized: Yes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746204
+    m_Localized: 'Narrator: You push deeper into the black.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746205
+    m_Localized: 'Narrator: You find a pile of gold!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746206
+    m_Localized: 'Narrator: You return to town with your riches.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746207
+    m_Localized: No.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746208
+    m_Localized: 'Narrator: The caves are scary.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746209
+    m_Localized: 'Narrator: Back to town!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746210
+    m_Localized: 'Narrator: You wander into the ruined castle...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746211
+    m_Localized: 'Narrator: With your gold, you''d best keep your wits about you.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746212
+    m_Localized: 'Narrator: Unfortunately, there''s nothing of interest here...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746213
+    m_Localized: 'Narrator: You head back to town!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7568845746214
+    m_Localized: 'Narrator: You wander off, in search of your next adventure.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451456
+    m_Localized: 'Vendor: Do you want to buy a weapon?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451457
+    m_Localized: Yes! I'll take the Sword.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451458
+    m_Localized: 'Vendor: OK! Here''s your sword.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451459
+    m_Localized: Yes, I want a crossbow.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268951
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268950
+    m_Localized: 'Guy: What are you doing back here?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268949
+    m_Localized: 'Ava: Greetings, chef!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268948
+    m_Localized: 'Guy: Hi there, how can I help?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268947
+    m_Localized: 'Ava: Hello, barkeep!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268946
+    m_Localized: 'Narrator: You wander off, in search of your next adventure.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268945
+    m_Localized: 'Narrator: You head back to town!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451467
+    m_Localized: 'Player: I''d like to buy a pie!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451468
+    m_Localized: 'Baker: Well, you can''t afford one!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451469
+    m_Localized: 'Baker: You can almost afford one!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451470
+    m_Localized: 'Baker: You can afford a pie!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451471
+    m_Localized: 'Guard: You''re not allowed in!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451472
+    m_Localized: Sure I am! The boss knows me!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451473
+    m_Localized: Please?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451474
+    m_Localized: I'll come back later.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451475
+    m_Localized: 'Guard: Who goes there?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451476
+    m_Localized: A thief!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451477
+    m_Localized: A merchant!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451478
+    m_Localized: 'Player: I''m nobody!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451479
+    m_Localized: 'Guard: get the thief!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451480
+    m_Localized: 'Guard: what are you selling?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451481
+    m_Localized: 'Narrator: You make your way into a new town...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451482
+    m_Localized: 'Narrator: Where are you heading?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451483
+    m_Localized: Caves!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451484
+    m_Localized: Ruined castle!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451485
+    m_Localized: Leave town.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451486
+    m_Localized: 'Narrator: You make your way into the forboding caves.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451487
+    m_Localized: 'Narrator: The blackness of the caves beckons...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451488
+    m_Localized: 'Narrator: Go deeper?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451489
+    m_Localized: Yes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451490
+    m_Localized: 'Narrator: You push deeper into the black.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451491
+    m_Localized: 'Narrator: You find a pile of gold!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451492
+    m_Localized: 'Narrator: You return to town with your riches.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451493
+    m_Localized: No.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451494
+    m_Localized: 'Narrator: The caves are scary.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451495
+    m_Localized: 'Narrator: Back to town!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451496
+    m_Localized: 'Narrator: You wander into the ruined castle...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451497
+    m_Localized: 'Narrator: With your gold, you''d best keep your wits about you.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451498
+    m_Localized: 'Narrator: Unfortunately, there''s nothing of interest here...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451499
+    m_Localized: 'Narrator: You head back to town!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451500
+    m_Localized: 'Narrator: You wander off, in search of your next adventure.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451501
+    m_Localized: 'Sam: Hey buddy! Good to see you again.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451502
+    m_Localized: 'Sam: Oh, it''s you. What do you want?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451503
+    m_Localized: 'Craftsman: You''ve got everything you need to build that chair
+      now.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451504
+    m_Localized: 'Craftsman: You''ll need more materials first.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451505
+    m_Localized: 'Craftsman: Your carpentry skills aren''t quite there yet.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10247202451506
+    m_Localized: 'Innkeeper: Most shops are closed now, but you''re welcome to stay
+      here for the night.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268955
+    m_Localized: 'Craftsman: You''ll need more materials first.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268954
+    m_Localized: 'Craftsman: You''ve got everything you need to build that chair
+      now.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268953
+    m_Localized: 'Sam: Oh, it''s you. What do you want?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268952
+    m_Localized: 'Sam: Hey buddy! Good to see you again.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268944
+    m_Localized: 'Narrator: Unfortunately, there''s nothing of interest here...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268943
+    m_Localized: 'Narrator: With your gold, you''d best keep your wits about you.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268942
+    m_Localized: 'Narrator: You wander into the ruined castle...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268941
+    m_Localized: 'Narrator: Back to town!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268940
+    m_Localized: 'Narrator: The caves are scary.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268939
+    m_Localized: No.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268938
+    m_Localized: 'Narrator: You return to town with your riches.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268937
+    m_Localized: 'Narrator: You find a pile of gold!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268936
+    m_Localized: 'Narrator: You push deeper into the black.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268935
+    m_Localized: Yes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268934
+    m_Localized: 'Narrator: Go deeper?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268933
+    m_Localized: 'Narrator: The blackness of the caves beckons...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268932
+    m_Localized: 'Narrator: You make your way into the forboding caves.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268931
+    m_Localized: Leave town.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268930
+    m_Localized: Ruined castle!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268929
+    m_Localized: Caves!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268928
+    m_Localized: 'Narrator: Where are you heading?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268927
+    m_Localized: 'Narrator: You make your way into a new town...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268926
+    m_Localized: 'Guard: No weapons allowed in the city!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268925
+    m_Localized: 'Guard: I hear the king has a new advisor.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268924
+    m_Localized: 'Guard: Yes! Stay off the roads after dark!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268923
+    m_Localized: 'Player: Who, me?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268922
+    m_Localized: 'Guard: You there, traveler!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268921
+    m_Localized: I think [select value={0} m="he" f="she" nb="they" /] will be there!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268920
+    m_Localized: '[nomarkup]Here''s a big ol'' [ bunch of ] characters, filled [[]]
+      with square [[] brackets![/nomarkup]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268919
+    m_Localized: '[wave size=2]Wavy![/wave]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268918
+    m_Localized: '[wave][bounce]Hello![/]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268917
+    m_Localized: '[wave/] hello!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268916
+    m_Localized: 'Oh, [wave]hello [bounce]there![/bounce][/wave]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268915
+    m_Localized: Oh, [wave]hello[/wave] there!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268914
+    m_Localized: 'Pirate: And only because you were once a pirate!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268913
+    m_Localized: 'Pirate: But only this once.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268912
+    m_Localized: 'Pirate: Arr! I''ll let you go.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268911
+    m_Localized: 'Pirate: Yarr, you escaped me this time!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268910
+    m_Localized: 'Narrator: You run...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268909
+    m_Localized: 'Player: Oh no, I was robbed!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268908
+    m_Localized: 'Pirate: Yeh understand? Just a one-time thing.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268907
+    m_Localized: 'Pirate: On account of yeh be an old crewmate.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268906
+    m_Localized: 'Pirate: Gimme half your money!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268905
+    m_Localized: 'Pirate: All the space money! Now!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268904
+    m_Localized: 'Pirate: I''ll take all your money! Yarr!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268903
+    m_Localized: Ignore them.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268902
+    m_Localized: Hand over your (space) money.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268901
+    m_Localized: 'Player: Oh no! A space pirate!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477808
+    m_Localized: 'Guard: You there, traveler!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477809
+    m_Localized: 'Player: Who, me?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477810
+    m_Localized: 'Guard: You there, traveler!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477811
+    m_Localized: 'Player: Who, me?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477812
+    m_Localized: 'Guard: Yes! Stay off the roads after dark!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477813
+    m_Localized: 'Narrator: You make your way into a new town...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477814
+    m_Localized: 'Narrator: Where are you heading?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477815
+    m_Localized: 'Narrator: You make your way into a new town...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477816
+    m_Localized: 'Narrator: Where are you heading?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477817
+    m_Localized: Caves!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477818
+    m_Localized: 'Narrator: You make your way into the forboding caves.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477819
+    m_Localized: 'Narrator: The blackness of the caves beckons...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477820
+    m_Localized: 'Narrator: You make your way into the forboding caves.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477821
+    m_Localized: 'Narrator: The blackness of the caves beckons...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477822
+    m_Localized: 'Narrator: Go deeper?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477823
+    m_Localized: Yes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477824
+    m_Localized: 'Narrator: You push deeper into the black.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268883
+    m_Localized: 'Guard: Who goes there?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268882
+    m_Localized: I'll come back later.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268881
+    m_Localized: Please?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477828
+    m_Localized: 'Narrator: You wander into the ruined castle...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477829
+    m_Localized: 'Narrator: With your gold, you''d best keep your wits about you.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477830
+    m_Localized: 'Narrator: You wander into the ruined castle...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477831
+    m_Localized: 'Narrator: With your gold, you''d best keep your wits about you.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477832
+    m_Localized: 'Narrator: You wander off, in search of your next adventure.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477833
+    m_Localized: 'Sam: Hey buddy! Good to see you again.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477834
+    m_Localized: 'Sam: Oh, it''s you. What do you want?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477835
+    m_Localized: 'Craftsman: You''ve got everything you need to build that chair
+      now.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477836
+    m_Localized: 'Craftsman: You''ll need more materials first.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477837
+    m_Localized: 'Craftsman: You''ve got everything you need to build that chair
+      now.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19154335477838
+    m_Localized: 'Innkeeper: Most shops are closed now, but you''re welcome to stay
+      here for the night.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268900
+    m_Localized: 'Pirate: You may have left the pirate life, but I''ll still be robbin''
+      yeh!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268899
+    m_Localized: 'Pirate: Yarr, I''m still gonna rob yeh!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19625863327745
+    m_Localized: 'Guard: I hear the king has a new advisor.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19625863327746
+    m_Localized: 'Guard: No weapons allowed in the city!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19625863327747
+    m_Localized: Ruined castle!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19625863327748
+    m_Localized: Leave town.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268880
+    m_Localized: Sure I am! The boss knows me!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268879
+    m_Localized: 'Guard: You''re not allowed in!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19625863327751
+    m_Localized: 'Narrator: Unfortunately, there''s nothing of interest here...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19625863327752
+    m_Localized: 'Narrator: You head back to town!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19625863327753
+    m_Localized: 'Narrator: You wander off, in search of your next adventure.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19625863327754
+    m_Localized: 'Sam: Hey buddy! Good to see you again.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19625863327755
+    m_Localized: 'Sam: Oh, it''s you. What do you want?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19625863327756
+    m_Localized: 'Craftsman: You''ll need more materials first.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19625863327757
+    m_Localized: 'Craftsman: Your carpentry skills aren''t quite there yet.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19625863327758
+    m_Localized: 'Innkeeper: Most shops are closed now, but you''re welcome to stay
+      here for the night.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268898
+    m_Localized: 'Pirate: Arr, you look like me old crewmate!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268897
+    m_Localized: 'Pirate: Yarr! Your space money or your life!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268896
+    m_Localized: 'Pirate: Give me your space money! I''m a space pirate!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268895
+    m_Localized: 'Pirate: Give me all the space money!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268894
+    m_Localized: 'Pirate: Arr! I''m a space pirate!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268893
+    m_Localized: Nah.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268892
+    m_Localized: Yes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268891
+    m_Localized: 'Narrator: Did you used to be a space pirate?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268890
+    m_Localized: 'Gambler: My lucky number is {0}!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268889
+    m_Localized: You rolled a six!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268888
+    m_Localized: 'Guard: what are you selling?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268887
+    m_Localized: 'Guard: get the thief!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268886
+    m_Localized: 'Player: I''m nobody!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268885
+    m_Localized: A merchant!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268884
+    m_Localized: A thief!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268878
+    m_Localized: 'Baker: You can afford a pie!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268877
+    m_Localized: 'Baker: You can almost afford one!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268876
+    m_Localized: 'Baker: Well, you can''t afford one!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268875
+    m_Localized: 'Player: I''d like to buy a pie!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268874
+    m_Localized: 'Townsperson: An adventurer with no weapon?!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268873
+    m_Localized: 'Townsperson: An adventurer with a stick! Hahah!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268872
+    m_Localized: 'Townsperson: Don''t bring that crossbow near me, adventurer!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268871
+    m_Localized: 'Townsperson: Ooh, a big fancy adventurer with their big fancy sword!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268870
+    m_Localized: 'Vendor: One stick, coming right up.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268869
+    m_Localized: Yes, but just a pointy stick, please.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268868
+    m_Localized: 'Vendor: Here''s a crossbow!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268867
+    m_Localized: Yes, I want a crossbow.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23603258896411
+    m_Localized: 'Ava: I should go.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268866
+    m_Localized: 'Vendor: OK! Here''s your sword.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268865
+    m_Localized: Yes! I'll take the Sword.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304735268864
+    m_Localized: 'Vendor: Do you want to buy a weapon?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304731074568
+    m_Localized: 'Shopkeeper: You can''t afford my pies!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304731074567
+    m_Localized: Hey again!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304731074566
+    m_Localized: Hey hey!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304731074565
+    m_Localized: Let's go!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304731074564
+    m_Localized: 'NPC: Jumping to the "Variables" example!!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304731074563
+    m_Localized: Show me the "Variables" example!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304731074562
+    m_Localized: 'NPC: Jumping to the "Once" example!!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304731074561
+    m_Localized: Show me the "Once" example!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24304731074560
+    m_Localized: 'NPC: Jumping to the detour example!!'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

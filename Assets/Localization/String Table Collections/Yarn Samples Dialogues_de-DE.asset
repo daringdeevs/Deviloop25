@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Dialogue String Table_en-US
+  m_Name: Yarn Samples Dialogues_de-DE
   m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
   m_LocaleId:
-    m_Code: en-US
-  m_SharedData: {fileID: 11400000, guid: c09aa27be35e10b4a928b3a80086938f, type: 2}
+    m_Code: de-DE
+  m_SharedData: {fileID: 11400000, guid: 8704e561b2f735042b5d3ddbf46021fe, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData: []

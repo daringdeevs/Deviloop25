@@ -28,6 +28,12 @@ MonoBehaviour:
     - Locale-en-US
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 718ab919ae39b5e4496b6bfe430735a4
+    m_Address: Yarn Samples Dialogues_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cc3d90e59c61e144fb0fcff793b45180
     m_Address: Dialogue String Table_en-US
     m_ReadOnly: 1
