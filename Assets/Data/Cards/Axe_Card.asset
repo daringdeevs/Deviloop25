@@ -89,7 +89,7 @@ MonoBehaviour:
         _delayAfterMove:
           baseValue: 0.3
         _rotateDuration:
-          baseValue: 0.5
+          baseValue: 0.2
         _rounds: -0.5
     - rid: 5637349636791337055
       type: {class: ScaleAnimation, ns: Deviloop.Cards.Animations, asm: Deviloop}
@@ -101,7 +101,7 @@ MonoBehaviour:
           baseValue: 0.5
         _scaleDuration:
           baseValue: 0.5
-        _targetScaleMult: 2
+        _targetScaleMult: 1.5
         _ease: 27
     - rid: 5637349636791337088
       type: {class: RotateAnimation, ns: Deviloop.Cards.Animations, asm: Deviloop}
@@ -113,4 +113,4 @@ MonoBehaviour:
           baseValue: 0.3
         _rotateDuration:
           baseValue: 0.5
-        _rounds: 2
+        _rounds: 3

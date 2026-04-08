@@ -1,5 +1,6 @@
 using Deviloop;
 using System;
+using UnityEngine;
 using static LootSet;
 
 public class PlayerInventory : CustomMonoBehavior
@@ -54,11 +55,11 @@ public class PlayerInventory : CustomMonoBehavior
         }
         else if (loot.item is MaterialLoot materialLoot && materialLoot.materialType != null)
         {
-            Logger.Log($"adding x{loot.Count} {materialLoot.name} to the inventory.");
+            Logger.Log($"adding x{loot.Count} {materialLoot.name} to the inventory.", shouldLog);
         }
         else
         {
-            Logger.LogWarning("Attempted to add a non-coin loot item to the inventory.");
+            Logger.LogWarning("Attempted to add a non-coin loot item to the inventory.", shouldLog);
         }
     }
 
@@ -71,7 +72,6 @@ public class PlayerInventory : CustomMonoBehavior
         }
         if (CoinCount < amount)
         {
-            Logger.Log($"Not enough coins to spend. Current coins: {CoinCount}, Attempted to spend: {amount}");
             OnNotEnoughGold?.Invoke();
             return false;
         }

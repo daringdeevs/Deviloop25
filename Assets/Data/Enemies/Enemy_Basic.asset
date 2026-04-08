@@ -54,9 +54,9 @@ MonoBehaviour:
           baseValue: 1
         translatedDescription:
           m_TableReference:
-            m_TableCollectionName: 
+            m_TableCollectionName: GUID:b9ce7a0ae83848d49ba09c791e109edf
           m_TableEntryReference:
-            m_KeyId: 0
+            m_KeyId: 7840938635264
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0

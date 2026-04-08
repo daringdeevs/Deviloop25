@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd773790c6dfc34da1e840de0171e2a, type: 3}
   m_Name: FullRun_Test
   m_EditorClassIdentifier: 
+  IsEndless: 0
   Areas:
   - AreaName: Area 1
     MaxEncounters: 5
     AreaBackground: {fileID: 2383155565180484476, guid: e7bce10f565cf0a4c8d4bafd0a7e3290, type: 3}
     BossEncounter: {fileID: 11400000, guid: da71f82385860f04c804b677961ee567, type: 2}
-    PassageEncounter: {fileID: 11400000, guid: e7c1e5a88e2786f43bdf9368afcfb38c, type: 2}
+    PassageEncounter: {fileID: 11400000, guid: d5b2b91a5fd4c18488b92719816f6e9b, type: 2}
     Encounters:
     - Encounter: {fileID: 11400000, guid: 940530d623b9d324fb5e2ba851b19882, type: 2}
       Probability: 20
@@ -30,7 +31,7 @@ MonoBehaviour:
       IsStartingEncounter: 0
       ShouldSpawnRegularly: 1
       SpawnAfterEveryXEncounter: 10
-      EncountersSinceLastSpawn: 1
+      EncountersSinceLastSpawn: 4
     - Encounter: {fileID: 11400000, guid: 79bd2a45f5616194db3972a686c2a67d, type: 2}
       Probability: 20
       IsStartingEncounter: 0
