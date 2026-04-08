@@ -2,7 +2,6 @@
 using FMODUnity;
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using TMPro;
 using UnityEngine;
@@ -140,9 +139,8 @@ namespace Deviloop
 
             // Setup UI
             throwButton.onClick.AddListener(OnThrowButtonClicked);
+            throwButton.gameObject.SetActive(false);
             UpdateUI();
-
-            throwButton.gameObject.SetActive(true);
         }
 
         public void Deactivate()

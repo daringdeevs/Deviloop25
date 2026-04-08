@@ -21,13 +21,13 @@ MonoBehaviour:
     PassageEncounter: {fileID: 11400000, guid: 011906aa841f55e4d9a5ca93fc6d6ff8, type: 2}
     Encounters:
     - Encounter: {fileID: 11400000, guid: cc8825bf7b6011442a0712e1c9ab4cf6, type: 2}
-      Probability: 50
-      IsStartingEncounter: 1
+      Probability: 20
+      IsStartingEncounter: 0
       ShouldSpawnRegularly: 0
       SpawnAfterEveryXEncounter: 0
       EncountersSinceLastSpawn: 0
     - Encounter: {fileID: 11400000, guid: 940530d623b9d324fb5e2ba851b19882, type: 2}
-      Probability: 10
+      Probability: 20
       IsStartingEncounter: 0
       ShouldSpawnRegularly: 0
       SpawnAfterEveryXEncounter: 0
@@ -35,6 +35,12 @@ MonoBehaviour:
     - Encounter: {fileID: 11400000, guid: a825de36f2a9a8e4aad1c82b5554e34e, type: 2}
       Probability: 20
       IsStartingEncounter: 0
-      ShouldSpawnRegularly: 1
+      ShouldSpawnRegularly: 0
       SpawnAfterEveryXEncounter: 2
+      EncountersSinceLastSpawn: 0
+    - Encounter: {fileID: 11400000, guid: 9ed115a99a8052b4fb6807ca917f4a30, type: 2}
+      Probability: 40
+      IsStartingEncounter: 0
+      ShouldSpawnRegularly: 1
+      SpawnAfterEveryXEncounter: 1
       EncountersSinceLastSpawn: 0

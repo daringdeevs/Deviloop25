@@ -1,0 +1,41 @@
+﻿title: NPC_1_Start
+---
+<<declare $trust = 0>>
+<<declare $knows_secret = false>>
+
+Traveler: Greetings, wanderer. These roads can be dangerous alone. #line:039436e 
+
+-> Greet them warmly #line:02d837c 
+    <<set $trust += 1>>
+    Traveler: Indeed it is. Perhaps we could travel together a while? #line:0e988d4 
+    <<jump TravelTogether>>
+-> Eye them suspiciously #line:08a1519 
+    Traveler: I'm sure you can. But even the strongest benefit from allies. #line:0c86dea 
+    <<jump Suspicious>>
+-> Ignore them and walk past #line:015d702 
+    Traveler: Suit yourself... but beware the enemies ahead. #line:00bbfe6 
+===
+title: TravelTogether
+---
+Traveler: I should warn you—there's trouble at the old bridge. #line:00b9b98 
+
+-> Ask for details #line:085841b 
+    <<set $trust += 1>>
+    Traveler: Bandits have been collecting "tolls." Unfair ones. #line:0e0914f 
+    <<if $trust >= 2>>
+        Traveler: I know a secret path, if you're interested... #line:085f8f2 
+    <<else>>
+        Traveler: But together, we might get through. #line:0a5f78f 
+    <<endif>>
+-> Say nothing #line:0275202 
+
+===
+title: Suspicious
+---
+Traveler: I understand caution. The world has earned it. #line:09f3514  #line:0e56abb 
+Traveler: Here—take this. It shows a path around the bandits at the bridge. #line:00658bf 
+
+-> Accept the map #line:0ae909e 
+    Traveler: Safe travels. #line:04a80bd 
+-> Refuse #line:056d8e3 
+===

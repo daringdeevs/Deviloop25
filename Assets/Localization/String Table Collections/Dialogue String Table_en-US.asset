@@ -17,7 +17,178 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: c09aa27be35e10b4a928b3a80086938f, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 37076134132494336
+    m_Localized: You encounter a mysterious traveler at the crossroads.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243072
+    m_Localized: 'Traveler: Greetings, wanderer. These roads can be dangerous alone.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243073
+    m_Localized: Greet them warmly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243074
+    m_Localized: 'You: Hello there! It''s good to see a friendly face.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243075
+    m_Localized: 'Traveler: Indeed it is. Perhaps we could travel together a while?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243076
+    m_Localized: Eye them suspiciously
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243077
+    m_Localized: 'You: I can handle myself just fine.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243078
+    m_Localized: 'Traveler: I''m sure you can. But even the strongest benefit from
+      allies.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243079
+    m_Localized: Ignore them and walk past
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243080
+    m_Localized: You walk past without a word.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243081
+    m_Localized: 'Traveler: Suit yourself... but beware the enemies ahead.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243082
+    m_Localized: You walk together down the winding path.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243083
+    m_Localized: "Traveler: I should warn you\u2014there's trouble at the old bridge."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243084
+    m_Localized: Ask for details
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243085
+    m_Localized: 'Traveler: Bandits have been collecting "tolls." Unfair ones.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243086
+    m_Localized: 'Traveler: I know a secret path, if you''re interested...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243087
+    m_Localized: 'Traveler: But together, we might get through.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243088
+    m_Localized: Say nothing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243089
+    m_Localized: 'Traveler: I understand caution. The world has earned it.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243090
+    m_Localized: They reach into their cloak. You tense.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243091
+    m_Localized: But they only pull out a worn map.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243092
+    m_Localized: "Traveler: Here\u2014take this. It shows a path around the bandits
+      at the bridge."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243093
+    m_Localized: Accept the map
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243094
+    m_Localized: 'You: Thank you. I... misjudged you.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243095
+    m_Localized: 'Traveler: Safe travels.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243096
+    m_Localized: Refuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243097
+    m_Localized: 'You: I don''t need help.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243098
+    m_Localized: You continue alone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243099
+    m_Localized: The bridge looms ahead, three figures waiting in the shadows.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243100
+    m_Localized: Following the hidden path, you bypass the bridge entirely.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243101
+    m_Localized: The forest is quiet here. Peaceful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243102
+    m_Localized: You emerge safely on the other side, grateful for the unexpected
+      help.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243103
+    m_Localized: The bridge bandits block your path.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243104
+    m_Localized: But you're not alone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243105
+    m_Localized: 'Traveler: Let us pass, or face us both.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243106
+    m_Localized: The bandits reconsider and step aside.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243107
+    m_Localized: 'Bandit: Toll''s ten gold. Or we take your pack.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243108
+    m_Localized: Pay the toll
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243109
+    m_Localized: You hand over the coins reluctantly.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243110
+    m_Localized: Fight!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243111
+    m_Localized: It's a tough fight, but you prevail.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37076134170243112
+    m_Localized: You cross the bridge and continue your journey.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
