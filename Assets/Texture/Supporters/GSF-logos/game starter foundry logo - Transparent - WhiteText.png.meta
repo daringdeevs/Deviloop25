@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: b1eccf6f646d09644bde08c12c0aa85d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3188882674941254342
+    second: game starter foundry logo - Transparent - WhiteText_0
+  - first:
+      213: 2299670196510015402
+    second: game starter foundry logo - Transparent - WhiteText_1
+  - first:
+      213: -3190874287855064053
+    second: game starter foundry logo - Transparent - WhiteText_2
+  - first:
+      213: 8085457535282060794
+    second: game starter foundry logo - Transparent - WhiteText_3
+  - first:
+      213: -6051350687206597587
+    second: game starter foundry logo - Transparent - WhiteText_4
+  - first:
+      213: -2520431751387010322
+    second: game starter foundry logo - Transparent - WhiteText_5
+  - first:
+      213: -4297297106548273804
+    second: game starter foundry logo - Transparent - WhiteText_6
+  - first:
+      213: 6285162328088556106
+    second: game starter foundry logo - Transparent - WhiteText_7
+  - first:
+      213: -9186021279672103325
+    second: game starter foundry logo - Transparent - WhiteText_8
+  - first:
+      213: -5435482678401677055
+    second: game starter foundry logo - Transparent - WhiteText_9
+  - first:
+      213: -8513575250895750581
+    second: game starter foundry logo - Transparent - WhiteText_10
+  - first:
+      213: 6554065788878834592
+    second: game starter foundry logo - Transparent - WhiteText_11
+  - first:
+      213: 1075369447376664076
+    second: game starter foundry logo - Transparent - WhiteText_12
+  - first:
+      213: -7439019256177989827
+    second: game starter foundry logo - Transparent - WhiteText_13
+  - first:
+      213: -1655977950078897715
+    second: game starter foundry logo - Transparent - WhiteText_14
+  - first:
+      213: 1846741865160393829
+    second: game starter foundry logo - Transparent - WhiteText_15
+  - first:
+      213: -7571108297531659078
+    second: game starter foundry logo - Transparent - WhiteText_16
+  - first:
+      213: -8737589786601290308
+    second: game starter foundry logo - Transparent - WhiteText_17
+  - first:
+      213: -4831150428147779420
+    second: game starter foundry logo - Transparent - WhiteText_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 183
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35aab14a10deb3d0800000000000000
+      internalID: -3188882674941254342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 96
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf388b0cd11aef10800000000000000
+      internalID: 2299670196510015402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 96
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ca87dbdbcb7b3d0800000000000000
+      internalID: -3190874287855064053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_3
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 97
+        width: 49
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd1efc2ac0553070800000000000000
+      internalID: 8085457535282060794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_4
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 96
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c1cb58c98450ca0800000000000000
+      internalID: -6051350687206597587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_5
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 96
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea26f90da0a50dd0800000000000000
+      internalID: -2520431751387010322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_6
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 96
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d40e5bc0fec54c0800000000000000
+      internalID: -4297297106548273804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42b26156d1693750800000000000000
+      internalID: 6285162328088556106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_8
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 97
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36e07f5d052b48080800000000000000
+      internalID: -9186021279672103325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_9
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 96
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109441b6d494194b0800000000000000
+      internalID: -5435482678401677055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_10
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 96
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a3dc98a64b9d980800000000000000
+      internalID: -8513575250895750581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_11
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 97
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0abc9ac2c18b4fa50800000000000000
+      internalID: 6554065788878834592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_12
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 32
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06b13990da7cee00800000000000000
+      internalID: 1075369447376664076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_13
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 32
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37683e666b43c890800000000000000
+      internalID: -7439019256177989827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_14
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 32
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1faa104d8c409e0800000000000000
+      internalID: -1655977950078897715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_15
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 33
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5644ab021f1f0a910800000000000000
+      internalID: 1846741865160393829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_16
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 32
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abcec99ed150ee690800000000000000
+      internalID: -7571108297531659078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_17
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 33
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb58c800268ddb680800000000000000
+      internalID: -8737589786601290308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game starter foundry logo - Transparent - WhiteText_18
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 18
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a876c9384e44fcb0800000000000000
+      internalID: -4831150428147779420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      game starter foundry logo - Transparent - WhiteText_0: -3188882674941254342
+      game starter foundry logo - Transparent - WhiteText_1: 2299670196510015402
+      game starter foundry logo - Transparent - WhiteText_10: -8513575250895750581
+      game starter foundry logo - Transparent - WhiteText_11: 6554065788878834592
+      game starter foundry logo - Transparent - WhiteText_12: 1075369447376664076
+      game starter foundry logo - Transparent - WhiteText_13: -7439019256177989827
+      game starter foundry logo - Transparent - WhiteText_14: -1655977950078897715
+      game starter foundry logo - Transparent - WhiteText_15: 1846741865160393829
+      game starter foundry logo - Transparent - WhiteText_16: -7571108297531659078
+      game starter foundry logo - Transparent - WhiteText_17: -8737589786601290308
+      game starter foundry logo - Transparent - WhiteText_18: -4831150428147779420
+      game starter foundry logo - Transparent - WhiteText_2: -3190874287855064053
+      game starter foundry logo - Transparent - WhiteText_3: 8085457535282060794
+      game starter foundry logo - Transparent - WhiteText_4: -6051350687206597587
+      game starter foundry logo - Transparent - WhiteText_5: -2520431751387010322
+      game starter foundry logo - Transparent - WhiteText_6: -4297297106548273804
+      game starter foundry logo - Transparent - WhiteText_7: 6285162328088556106
+      game starter foundry logo - Transparent - WhiteText_8: -9186021279672103325
+      game starter foundry logo - Transparent - WhiteText_9: -5435482678401677055
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
