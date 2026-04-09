@@ -1,4 +1,4 @@
-name: Build Unity Project (Windows)
+name: Auto Unity Build Windows
 
 on:
   push:
@@ -34,7 +34,7 @@ jobs:
         id: build_info
         run: |
           SHORT_SHA="${{ github.sha }}" && SHORT_SHA="${SHORT_SHA:0:7}"
-          BUILD_NAME="${{ github.event.inputs.buildName }}-$(date +'%Y-%m-%d-%H-%M-%S')-${SHORT_SHA}"
+          BUILD_NAME="${{ inputs.buildName || 'GMTK2025-Windows' }}-$(date +'%Y-%m-%d-%H-%M-%S')-${SHORT_SHA}"
           echo "build_name=$BUILD_NAME" >> $GITHUB_OUTPUT
 
       - name: Cache Unity Library
