@@ -225,6 +225,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 3375138049161167055
+  - m_Id: 37365388909785088
+    m_Key: line:096cccdf
+    m_Metadata:
+      m_Items:
+      - rid: 3375138069627273598
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -241,8 +246,7 @@ MonoBehaviour:
       type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
       data:
         nodeName: NPC_1_Start
-        tags:
-        - lastline
+        tags: []
     - rid: 3375138049161167016
       type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
       data:
@@ -446,6 +450,12 @@ MonoBehaviour:
       data:
         nodeName: Bridge
         tags: []
+    - rid: 3375138069627273598
+      type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
+      data:
+        nodeName: NPC_1_Start
+        tags:
+        - lastline
     - rid: 5144960772876796296
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:

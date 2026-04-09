@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 37076134170243073
-    m_Localized: Greet them warmly
+    m_Localized: 'Accept help \[gain an item\]'
     m_Metadata:
       m_Items: []
   - m_Id: 37076134170243074
@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 37076134170243075
-    m_Localized: 'Traveler: Indeed it is. Perhaps we could travel together a while?'
+    m_Localized: 'Traveler: You''re welcome!'
     m_Metadata:
       m_Items: []
   - m_Id: 37076134170243076
@@ -187,6 +187,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 37076134170243112
     m_Localized: You cross the bridge and continue your journey.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37365388909785088
+    m_Localized: 'Traveler: Let me help you...'
     m_Metadata:
       m_Items: []
   references:
