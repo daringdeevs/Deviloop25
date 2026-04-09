@@ -1,0 +1,64 @@
+name: Build Unity Project (Windows)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      buildName:
+        description: "Name of the Windows build"
+        required: false
+        default: "GMTK2025-Windows"
+      build_type:
+        description: "Choose build type"
+        required: true
+        default: "Release"
+        type: choice
+        options:
+          - Debug
+          - Release
+
+jobs:
+  buildForWindows:
+    if: "!contains(github.event.head_commit.message, 'skip-build')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          lfs: true
+          fetch-depth: 0
+
+      - name: Generate build name with date
+        id: build_info
+        run: |
+          BUILD_NAME="${{ github.event.inputs.buildName }}-$(date +'%Y-%m-%d-%H-%M-%S')"
+          echo "build_name=$BUILD_NAME" >> $GITHUB_OUTPUT
+
+      - name: Cache Unity Library
+        uses: actions/cache@v3
+        with:
+          path: ./Library
+          key: Library-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            Library-${{ runner.os }}-
+
+      - name: Build Unity Project Win64
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          versioning: Semantic
+          buildName: ${{ steps.build_info.outputs.build_name }}
+          buildsPath: build
+          targetPlatform: StandaloneWindows64
+          projectPath: .
+
+      - name: Upload Windows Build
+        uses: actions/upload-artifact@v4
+        with:
+          name: Build
+          path: build
