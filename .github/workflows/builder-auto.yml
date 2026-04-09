@@ -33,7 +33,8 @@ jobs:
       - name: Generate build name with date
         id: build_info
         run: |
-          BUILD_NAME="${{ github.event.inputs.buildName }}-$(date +'%Y-%m-%d-%H-%M-%S')"
+          SHORT_SHA="${{ github.sha }}" && SHORT_SHA="${SHORT_SHA:0:7}"
+          BUILD_NAME="${{ github.event.inputs.buildName }}-$(date +'%Y-%m-%d-%H-%M-%S')-${SHORT_SHA}"
           echo "build_name=$BUILD_NAME" >> $GITHUB_OUTPUT
 
       - name: Cache Unity Library

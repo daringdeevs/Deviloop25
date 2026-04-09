@@ -119,28 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &2847901 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6816283426263911126, guid: b3834ca06e744bf4fa6859ebf42d42dd, type: 3}
-  m_PrefabInstance: {fileID: 5959485322713427550}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2847905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2847901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!4 &77685979 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2981657434082955952, guid: 7f8392853ce5e6c409f628d5b0287c8b, type: 3}
@@ -238,7 +216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22400762, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.00002670288
       objectReference: {fileID: 0}
     - target: {fileID: 22414360, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3103,10 +3081,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 550559499280113453, guid: b3834ca06e744bf4fa6859ebf42d42dd, type: 3}
-      propertyPath: lastLineText
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 706197184035712189, guid: b3834ca06e744bf4fa6859ebf42d42dd, type: 3}
       propertyPath: m_Name
       value: Shop
@@ -3116,15 +3090,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 881581111094820162, guid: b3834ca06e744bf4fa6859ebf42d42dd, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 881581111094820162, guid: b3834ca06e744bf4fa6859ebf42d42dd, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 881581111094820162, guid: b3834ca06e744bf4fa6859ebf42d42dd, type: 3}
-      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 881581111094820162, guid: b3834ca06e744bf4fa6859ebf42d42dd, type: 3}
@@ -3183,14 +3149,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1999511476463410839, guid: b3834ca06e744bf4fa6859ebf42d42dd, type: 3}
-      propertyPath: autoStart
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1999511476463410839, guid: b3834ca06e744bf4fa6859ebf42d42dd, type: 3}
-      propertyPath: runSelectedOptionAsLine
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2669700165342147908, guid: b3834ca06e744bf4fa6859ebf42d42dd, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -3199,17 +3157,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5197532570886073842, guid: b3834ca06e744bf4fa6859ebf42d42dd, type: 3}
-      propertyPath: m_text
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6816283426263911126, guid: b3834ca06e744bf4fa6859ebf42d42dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2847905}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3834ca06e744bf4fa6859ebf42d42dd, type: 3}
 --- !u!1001 &6383517268995430657
 PrefabInstance:
