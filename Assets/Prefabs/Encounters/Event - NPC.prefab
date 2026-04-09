@@ -174,10 +174,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8635311122966331881}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 760, y: -24}
-  m_SizeDelta: {x: 1440, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5813945670191361581
 MonoBehaviour:
@@ -827,6 +827,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9025616552918439346}
   - component: {fileID: 152100568355906439}
+  - component: {fileID: 8947041540987616890}
   m_Layer: 0
   m_Name: Visuals
   m_TagString: Untagged
@@ -873,6 +874,48 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8947041540987616890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5339682752782136820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bffcc7320db8894d98f0de16689f6ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Deviloop::Deviloop.NPCVisualController
+  _onEnterAnimationEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 742213238035355975}
+        m_TargetAssemblyTypeName: Deviloop.NPCEvent, Deviloop
+        m_MethodName: OnEnterAnimationEnd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onExitAnimationEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 742213238035355975}
+        m_TargetAssemblyTypeName: Deviloop.NPCEvent, Deviloop
+        m_MethodName: OnEncounterFinish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5486588077304740718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,7 +1232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7332587125270994872
 Transform:
   m_ObjectHideFlags: 0
@@ -1230,7 +1273,7 @@ MonoBehaviour:
   - {fileID: 267896869965283316}
   - {fileID: 5440872364323771675}
   verboseLogging: 1
-  autoStart: 1
+  autoStart: 0
   startNode: NPC_1_Start
   runSelectedOptionAsLine: 0
   allowOptionFallthrough: 1
@@ -1245,19 +1288,7 @@ MonoBehaviour:
       m_Calls: []
   onDialogueComplete:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 742213238035355975}
-        m_TargetAssemblyTypeName: Deviloop.NPCEvent, Deviloop
-        m_MethodName: OnDialogueComplete
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnhandledCommand:
     m_PersistentCalls:
       m_Calls: []
@@ -1524,19 +1555,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Deviloop::Deviloop.NPCEvent
   _onStart:
     m_PersistentCalls:
+      m_Calls: []
+  _onDialogueComplete:
+    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7919156679640346735}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 7395506797125642080}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -1547,9 +1569,22 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152100568355906439}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Exit
+          m_BoolArgument: 0
         m_CallState: 2
   _dialogueRunner: {fileID: 6386507044209877410}
+  _dialogueUI: {fileID: 7395506797125642080}
 --- !u!1 &8791500689718214702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1588,7 +1623,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 80}
-  m_SizeDelta: {x: -400, y: 56}
+  m_SizeDelta: {x: -400, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2229255729391754053
 MonoBehaviour:

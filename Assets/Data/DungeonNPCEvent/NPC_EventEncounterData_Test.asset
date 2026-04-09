@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: NPC_EventEncounterData_Test
   m_EditorClassIdentifier: Deviloop::Deviloop.EventEncounterData
   NPCPrefab: {fileID: 8702260995395382813, guid: 4badb9acdefd1ac4a8e8a3ab9471789b, type: 3}
+  YarnProject: {fileID: 7545569452688597077, guid: a3a8ee455f3ae5b4f8ccb6b4324b1761, type: 3}
+  StartNodeName: NPC_1_Start

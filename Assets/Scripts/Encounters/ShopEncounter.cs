@@ -14,12 +14,16 @@ namespace Deviloop
 
         public override void StartEncounter()
         {
+            InputSettings.IsGameplayInputBlocked = true;
+            
             ShopManager.OnShopStartEvent?.Invoke(_shopData);
             ShopManager.OnShopFinishedEvent += FinishEncounter;
         }
 
         public override void FinishEncounter()
         {
+            InputSettings.IsGameplayInputBlocked = false;
+            
             ShopManager.OnShopFinishedEvent -= FinishEncounter;
             EncounterManager.OnEncounterFinished?.Invoke();
         }

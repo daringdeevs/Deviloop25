@@ -14,12 +14,16 @@ namespace Deviloop
 
         public override void StartEncounter()
         {
+            InputSettings.IsGameplayInputBlocked = true;
+            
             DungeonEventManager.OnStartEvent?.Invoke(_eventEncounterData);
             DungeonEventManager.OnDungeonEventFinishedEvent += FinishEncounter;
         }
 
         public override void FinishEncounter()
         {
+            InputSettings.IsGameplayInputBlocked = false;
+            
             DungeonEventManager.OnDungeonEventFinishedEvent -= FinishEncounter;
             EncounterManager.OnEncounterFinished?.Invoke();
         }

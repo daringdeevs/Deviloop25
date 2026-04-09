@@ -1,4 +1,6 @@
 using UnityEngine;
+using Yarn.Unity;
+using Yarn.Unity.Attributes;
 
 namespace Deviloop
 {
@@ -6,6 +8,8 @@ namespace Deviloop
     public class EventEncounterData : ScriptableObject
     { 
         public GameObject NPCPrefab;
-
+        public YarnProject YarnProject;
+        [YarnNode(nameof(YarnProject))]
+        public string StartNodeName = "Start";
     }
 }
