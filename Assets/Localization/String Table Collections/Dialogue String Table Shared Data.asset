@@ -275,6 +275,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 3375138092517687412
+  - m_Id: 37689417415831552
+    m_Key: line:518997a0
+    m_Metadata:
+      m_Items:
+      - rid: 3375138092517687511
+  - m_Id: 37689417449385984
+    m_Key: line:f21cf33e
+    m_Metadata:
+      m_Items:
+      - rid: 3375138092517687512
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -547,6 +557,16 @@ MonoBehaviour:
       type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
       data:
         nodeName: NPC_Seahorses_Start
+        tags: []
+    - rid: 3375138092517687511
+      type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
+      data:
+        nodeName: NPC_DemonicDealer_Start
+        tags: []
+    - rid: 3375138092517687512
+      type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
+      data:
+        nodeName: NPC_DemonicDealer_Start
         tags: []
     - rid: 5144960772876796296
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}

@@ -18,17 +18,17 @@ MonoBehaviour:
     MaxEncounters: 5
     AreaBackground: {fileID: 2383155565180484476, guid: e7bce10f565cf0a4c8d4bafd0a7e3290, type: 3}
     BossEncounter: {fileID: 11400000, guid: 9a0d9e6c577048845915c399beb26e57, type: 2}
-    PassageEncounter: {fileID: 11400000, guid: d5b2b91a5fd4c18488b92719816f6e9b, type: 2}
+    PassageEncounter: {fileID: 11400000, guid: 011906aa841f55e4d9a5ca93fc6d6ff8, type: 2}
     Encounters:
     - Encounter: {fileID: 11400000, guid: 9ed115a99a8052b4fb6807ca917f4a30, type: 2}
       Probability: 40
-      IsStartingEncounter: 0
+      IsStartingEncounter: 1
       ShouldSpawnRegularly: 0
       SpawnAfterEveryXEncounter: 1
       EncountersSinceLastSpawn: 0
     - Encounter: {fileID: 11400000, guid: fd8102cadb1797f4895374a4820bf553, type: 2}
       Probability: 40
-      IsStartingEncounter: 1
+      IsStartingEncounter: 0
       ShouldSpawnRegularly: 0
       SpawnAfterEveryXEncounter: 1
       EncountersSinceLastSpawn: 0

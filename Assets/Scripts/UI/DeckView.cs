@@ -9,8 +9,11 @@ using UnityEngine.UI;
 public class DeckView : MonoBehaviour
 {
     public delegate void OpenDeckDelegate(CardDeck deck, Action<BaseCard> OnCardClick = null, bool showPrice = false);
+
     public static OpenDeckDelegate OpenDeck;
+    public static Action CloseDeckAction;
     public static Action<CardDeck, int, Action> OpenDeckToDelete;
+    private static bool IsDeckOpen = false;
 
     [SerializeField] private ScrollRect _scrollRect;
     [SerializeField] private Transform _deckContentHolder;
@@ -24,6 +27,7 @@ public class DeckView : MonoBehaviour
     public void Initialize()
     {
         OpenDeck += onDeckOpen;
+        CloseDeckAction += CloseDeck;
         OpenDeckToDelete += onOpenDeckToDelete;
         gameObject.SetActive(false);
     }
@@ -32,14 +36,18 @@ public class DeckView : MonoBehaviour
     {
         OpenDeck -= onDeckOpen;
         OpenDeckToDelete -= onOpenDeckToDelete;
+        CloseDeckAction -= CloseDeck;
     }
 
     private void onDeckOpen(CardDeck deck, Action<BaseCard> OnCardClick = null, bool showPrice = true)
     {
+        if (IsDeckOpen) return;
         if (InputSettings.AreAllInputBlocked)
         {
             return;
         }
+        
+        IsDeckOpen  = true;
 
         _deckTitle.text = "";
 
@@ -73,8 +81,8 @@ public class DeckView : MonoBehaviour
             {
                 deckViewItem.DisablePrice();
             }
-
         }
+
         gameObject.SetActive(true);
     }
 
@@ -92,6 +100,7 @@ public class DeckView : MonoBehaviour
 
     public void CloseDeck()
     {
+        IsDeckOpen = false;
         _deckTitle.text = "";
         gameObject.SetActive(false);
 

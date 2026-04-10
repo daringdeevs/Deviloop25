@@ -26,5 +26,11 @@ namespace Deviloop
         {
             Player.PlayerCombatCharacter.TakeDamage(damage, AttackType.Normal);
         }
+                
+        [YarnCommand("add_coin_to_player")]
+        public static void AddCoinToThePlayer(int coin)
+        {                    
+            PlayerInventory.CoinCount += coin;
+        }
     }
 }

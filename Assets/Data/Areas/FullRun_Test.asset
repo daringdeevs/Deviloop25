@@ -50,7 +50,13 @@ MonoBehaviour:
       ShouldSpawnRegularly: 0
       SpawnAfterEveryXEncounter: 0
       EncountersSinceLastSpawn: 0
-  - AreaName: Area 1
+    - Encounter: {fileID: 11400000, guid: fd8102cadb1797f4895374a4820bf553, type: 2}
+      Probability: 10
+      IsStartingEncounter: 0
+      ShouldSpawnRegularly: 0
+      SpawnAfterEveryXEncounter: 0
+      EncountersSinceLastSpawn: 0
+  - AreaName: Area 2
     MaxEncounters: 5
     AreaBackground: {fileID: 2383155565180484476, guid: edff07bd34cc65642bfad0eed2b5e9ad, type: 3}
     BossEncounter: {fileID: 11400000, guid: a4b61ea0a1c2e8d42bf517cbe3a834a4, type: 2}
@@ -81,6 +87,12 @@ MonoBehaviour:
       SpawnAfterEveryXEncounter: 0
       EncountersSinceLastSpawn: 0
     - Encounter: {fileID: 11400000, guid: fd9866f12f7212340b3c6e387e903efc, type: 2}
+      Probability: 10
+      IsStartingEncounter: 0
+      ShouldSpawnRegularly: 0
+      SpawnAfterEveryXEncounter: 0
+      EncountersSinceLastSpawn: 0
+    - Encounter: {fileID: 11400000, guid: 9ed115a99a8052b4fb6807ca917f4a30, type: 2}
       Probability: 10
       IsStartingEncounter: 0
       ShouldSpawnRegularly: 0

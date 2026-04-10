@@ -475,9 +475,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 5467583143027362919}
     m_Modifications:
     - target: {fileID: 1565426210951760346, guid: a783e2b322b01614985d2c9ad26cedd2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1565426210951760346, guid: a783e2b322b01614985d2c9ad26cedd2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1565426210951760346, guid: a783e2b322b01614985d2c9ad26cedd2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2771578096795802580}
+    - target: {fileID: 1565426210951760346, guid: a783e2b322b01614985d2c9ad26cedd2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1565426210951760346, guid: a783e2b322b01614985d2c9ad26cedd2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Close
@@ -485,6 +497,10 @@ PrefabInstance:
     - target: {fileID: 1565426210951760346, guid: a783e2b322b01614985d2c9ad26cedd2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ShopUI, Deviloop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1565426210951760346, guid: a783e2b322b01614985d2c9ad26cedd2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3058950525426805416, guid: a783e2b322b01614985d2c9ad26cedd2, type: 3}
       propertyPath: m_Pivot.x
@@ -573,6 +589,10 @@ PrefabInstance:
     - target: {fileID: 6024798262253909017, guid: a783e2b322b01614985d2c9ad26cedd2, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084467437035848963, guid: a783e2b322b01614985d2c9ad26cedd2, type: 3}
+      propertyPath: m_text
+      value: Leave
       objectReference: {fileID: 0}
     - target: {fileID: 8084467437035848963, guid: a783e2b322b01614985d2c9ad26cedd2, type: 3}
       propertyPath: m_fontSize

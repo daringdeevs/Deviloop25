@@ -6,8 +6,9 @@ Traveler: Let me help you...
 -> Accept help \[suffer 5 damage and add broken bottle to your bag\] #line:02d837c 
     <<deal_damage_to_player 5>>
     <<add_item_to_deck a423a676599704f4795f0048c68fc928>>
-    Traveler: You're welcome! #line:0e988d4 
--> Ignore them and walk past... #line:015d702 
+    Traveler: You're welcome!
+-> Accept something that hurts less! \[get 30 coins\]
+    <<add_coin_to_player 30>>
     Traveler: Suit yourself... but beware the enemies ahead. #line:00bbfe6 
 ===
 

@@ -2,6 +2,7 @@
 using FMODUnity;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Cysharp.Threading.Tasks;
 using TMPro;
 using UnityEngine;
@@ -19,30 +20,36 @@ namespace Deviloop
         // After items are thrown, these values change to allow player start drawing the lasso
         public static Action OnPlayerClickedThrowButton;
         public static Action<BaseCard, int> AddCardToDeckAction;
-        public delegate void RemoveCardFromDeck(BaseCard card, bool removeFromDiscard);
+
+        public delegate void RemoveCardFromDeck(BaseCard card, bool removeFromDiscardDeck);
+
         public static RemoveCardFromDeck RemoveCardFromDeckAction;
+        public static RemoveCardFromDeck RemoveAllCardsOfTypeFromDeckAction;
         public static Action<CardEntry> AddCardToHandAction;
         public static Action ReturnAllCardsToHand;
 
         [SerializeField] private bool shouldLog = true;
 
-        [Header("Deck Configuration")]
-        public CardDeck baseDeck;
+        [Header("Deck Configuration")] public CardDeck baseDeck;
         public CardPrefab cardPrefab;
         public static CardDeck _drawDeck;
+
         public static CardDeck DrawDeck
         {
             get => _drawDeck;
         }
+
         private static CardDeck _discardDeck;
+
         public static CardDeck DiscardDeck
         {
             get => _discardDeck;
         }
+
         public CardDeck _extraHandCards;
 
-        [Header("Throwing Settings")]
-        private static int _cardsToThrowPerTurn = 5;
+        [Header("Throwing Settings")] private static int _cardsToThrowPerTurn = 5;
+
         public static int CardsToThrowPerTurn
         {
             set
@@ -52,6 +59,7 @@ namespace Deviloop
             }
             get => _cardsToThrowPerTurn;
         }
+
         public static bool ShouldThrowAtOnce = false;
         public Transform throwOrigin; // Bottom of screen
         public float delayBetweenThrows = 0.2f;
@@ -60,12 +68,10 @@ namespace Deviloop
         public Vector2 throwAngleRange = new Vector2(60f, 120f); // Degrees
         public Vector2 torqueRange = new Vector2(-5, 5);
 
-        [Header("Audio Settings")]
-        public EventReference throwSound;
+        [Header("Audio Settings")] public EventReference throwSound;
         public EventReference throwStartSound;
 
-        [Header("UI Elements")]
-        public Button throwButton;
+        [Header("UI Elements")] public Button throwButton;
         public TextMeshProUGUI deckCountText;
         public TextMeshProUGUI discardDeckCountText;
         public Transform deckDisplayParent;
@@ -84,7 +90,8 @@ namespace Deviloop
         {
             base.Awake();
 
-            var source = LocalizationSettings.StringDatabase.SmartFormatter.GetSourceExtension<PersistentVariablesSource>();
+            var source = LocalizationSettings.StringDatabase.SmartFormatter
+                .GetSourceExtension<PersistentVariablesSource>();
             CombatRoundCounterVariable = source["global"]["CurrentThrownItemsCount"] as IntVariable;
             CombatRoundCounterVariable.Value = CardsToThrowPerTurn;
         }
@@ -96,6 +103,7 @@ namespace Deviloop
             AddCardToHandAction += AddCardToHand;
             ReturnAllCardsToHand += ReturnCardsToDrawDeck;
             RemoveCardFromDeckAction += RemoveCard;
+            RemoveAllCardsOfTypeFromDeckAction += RemoveAllCardsOfTypeFromDeck;
             CombatManager.OnAfterAllEnemiesDefeated += FinishEncounter;
         }
 
@@ -106,6 +114,7 @@ namespace Deviloop
             AddCardToHandAction -= AddCardToHand;
             ReturnAllCardsToHand -= ReturnCardsToDrawDeck;
             RemoveCardFromDeckAction -= RemoveCard;
+            RemoveAllCardsOfTypeFromDeckAction -= RemoveAllCardsOfTypeFromDeck;
             CombatManager.OnAfterAllEnemiesDefeated -= FinishEncounter;
         }
 
@@ -230,6 +239,7 @@ namespace Deviloop
                     break;
                 }
             }
+
             GameStateManager.Instance.CanPlayerDrawLasso = false;
 
             ClearThrownCards();
@@ -260,6 +270,7 @@ namespace Deviloop
             {
                 _drawDeck.RemoveCard(card);
             }
+
             UpdateUI();
 
             // always add combo card
@@ -293,6 +304,7 @@ namespace Deviloop
             {
                 _drawDeck.AddCard(card);
             }
+
             _discardDeck.RemoveAllCards();
             UpdateUI();
         }
@@ -329,6 +341,7 @@ namespace Deviloop
                 if (card != null && card.gameObject.activeInHierarchy)
                     _cardsPool.ReturnToPool(card);
             }
+
             thrownCards.Clear();
             if (_extraHandCards != null)
                 _extraHandCards.RemoveAllCards();
@@ -358,6 +371,40 @@ namespace Deviloop
                 _discardDeck.RemoveCard(card);
             else
                 _drawDeck.RemoveCard(card);
+
+            UpdateUI();
+        }
+
+        public static int NumberOfCardsInDeck(BaseCard card)
+        {
+            int count = _drawDeck.GetAllCardsAsList().Count(cardInDeck => card == cardInDeck) +
+                        _discardDeck.GetAllCardsAsList().Count(cardInDeck => card == cardInDeck);
+            return count;
+        }
+
+
+        private void RemoveAllCardsOfTypeFromDeck(BaseCard card, bool removeFromDiscardDeck = false)
+        {
+            _drawDeck.GetAllCardsAsList().ForEach(cardInDeck =>
+                {
+                    if (cardInDeck == card)
+                    {
+                        _drawDeck.RemoveCard(cardInDeck);
+                    }
+                }
+            );
+
+            if (removeFromDiscardDeck)
+            {
+                _discardDeck.GetAllCardsAsList().ForEach(cardInDeck =>
+                    {
+                        if (cardInDeck == card)
+                        {
+                            _discardDeck.RemoveCard(cardInDeck);
+                        }
+                    }
+                );
+            }
 
             UpdateUI();
         }

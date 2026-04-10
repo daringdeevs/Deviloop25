@@ -15,11 +15,11 @@ public class ShopData : ScriptableObject
     public ShopData SetupInstance()
     {
         var copy = CreateInstance(nameof(ShopData)) as ShopData;
-        copy.sellingCards = SetUniqueOffers();
         copy.itemDeletionPrice = itemDeletionPrice;
         copy.shopPossibleCardOffers = shopPossibleCardOffers;
         copy.rerollPrice = rerollPrice;
         copy.shopCardsCount = shopCardsCount;
+        copy.sellingCards = SetUniqueOffers();
         return copy;
     }
 
@@ -29,6 +29,11 @@ public class ShopData : ScriptableObject
         for (int i = 0; i < shopCardsCount; i++)
         {
             CardLoot cardLoot = (CardLoot)CreateInstance(typeof(CardLoot));
+
+            while (shopPossibleCardOffers.Contains(cardLoot.Card) == false)
+            {
+                cardLoot.ResetLoot(shopPossibleCardOffers);
+            }
 
             // TODO: turn into a utility function. update the reward manager as well
             int safety = 50;

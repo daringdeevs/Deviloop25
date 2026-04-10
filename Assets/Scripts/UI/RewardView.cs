@@ -35,6 +35,7 @@ public class RewardView : MonoBehaviour, IInitiatable
 
         _rewardItemsPool = PoolManager.Instance.CreatePool(_rewardItemPrefab, 3);
     }
+    
     public void Deactivate()
     {
     }
@@ -48,6 +49,8 @@ public class RewardView : MonoBehaviour, IInitiatable
     {
         await Awaitable.WaitForSecondsAsync(_waitBeforeShowingRewards.Value);
 
+        DeckView.CloseDeckAction?.Invoke();
+        
         Time.timeScale = 0;
         _allCurrentLoots.Clear();
         _itemsSelectionContent.gameObject.SetActive(false);

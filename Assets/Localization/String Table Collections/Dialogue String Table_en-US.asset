@@ -230,6 +230,14 @@ MonoBehaviour:
     m_Localized: 'Traveler: That was cruel!'
     m_Metadata:
       m_Items: []
+  - m_Id: 37689417415831552
+    m_Localized: 'Traveler: You''re welcome!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37689417449385984
+    m_Localized: 'Accept something that hurts less! \[get 30 coins\]'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
