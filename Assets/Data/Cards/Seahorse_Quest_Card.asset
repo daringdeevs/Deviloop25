@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62380294325c4a04ea77843fb4d7ff83, type: 3}
+  m_Name: Seahorse_Quest_Card
+  m_EditorClassIdentifier: Deviloop::Deviloop.BaseCard
+  GUID: f7dd6265cf88ae14e9b3d16c9b7e4bd8
+  shouldLog: 0
+  activationOrder: 10
+  _cardEffects: []
+  _onLassoEffects: []
+  _onDropEffects: []
+  _animationType:
+  - rid: 5637349636791337071
+  - rid: 5637349636791337072
+  _extentionPrefab: {fileID: 0}
+  TargetRandom: 0
+  isConsumable: 0
+  isNegative: 0
+  isInGame: 1
+  rarity: 30
+  materialType: 32
+  price: 15
+  overridePrice: 0
+  cardIcon: {fileID: 21300000, guid: e5f4ea33d93a99c4c84d0ea78eb22b75, type: 3}
+  spriteScale: {x: 0.4, y: 0.4}
+  OnSelectColor: {r: 0.8509804, g: 1, b: 0.49019608, a: 1}
+  cardName:
+    m_TableReference:
+      m_TableCollectionName: GUID:b9ce7a0ae83848d49ba09c791e109edf
+    m_TableEntryReference:
+      m_KeyId: 37650278951727104
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description:
+    m_TableReference:
+      m_TableCollectionName: GUID:b9ce7a0ae83848d49ba09c791e109edf
+    m_TableEntryReference:
+      m_KeyId: 37650462892929024
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  OnUseSound:
+    Guid:
+      Data1: -1042154850
+      Data2: 1290496717
+      Data3: 280597907
+      Data4: 421807944
+    Path: event:/Gameplay/Throwables_Items/Items_Dagger
+  developerNotes: 
+  references:
+    version: 2
+    RefIds:
+    - rid: 5637349636791337071
+      type: {class: ScaleAnimation, ns: Deviloop.Cards.Animations, asm: Deviloop}
+      data:
+        _playWithNext: 0
+        _delayBeforeMove:
+          baseValue: 0.3
+        _delayAfterMove:
+          baseValue: 0.3
+        _scaleDuration:
+          baseValue: 0.5
+        _targetScaleMult: 2
+        _ease: 27
+    - rid: 5637349636791337072
+      type: {class: ScaleAnimation, ns: Deviloop.Cards.Animations, asm: Deviloop}
+      data:
+        _playWithNext: 0
+        _delayBeforeMove:
+          baseValue: 0.3
+        _delayAfterMove:
+          baseValue: 0.3
+        _scaleDuration:
+          baseValue: 0.5
+        _targetScaleMult: 0
+        _ease: 27

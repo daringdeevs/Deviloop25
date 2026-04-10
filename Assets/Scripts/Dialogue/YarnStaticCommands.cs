@@ -7,7 +7,7 @@ namespace Deviloop
     public class YarnStaticCommands
     {
         [YarnCommand("add_item_to_deck")]
-        public static void AddItemToDeck(string itemGUID)
+        public static void AddItemToDeck(string itemGUID, int count = 1)
         {
             Debug.Log($"Yarn: adding item to deck {itemGUID}");
             BaseCard cardToAdd = GameDataBaseManager.GameDatabase.cards.FirstOrDefault(card => card.GUID == itemGUID);
@@ -18,7 +18,13 @@ namespace Deviloop
                 return;
             }
             
-            CardManager.AddCardToDeckAction?.Invoke(cardToAdd, 1);
+            CardManager.AddCardToDeckAction?.Invoke(cardToAdd, count);
+        }
+        
+        [YarnCommand("deal_damage_to_player")]
+        public static void DealDamageToThePlayer(int damage = 1)
+        {
+            Player.PlayerCombatCharacter.TakeDamage(damage, AttackType.Normal);
         }
     }
 }

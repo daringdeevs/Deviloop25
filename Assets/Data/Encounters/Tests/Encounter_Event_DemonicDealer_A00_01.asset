@@ -9,26 +9,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55706623c5b38564894d6d5467c6a1f0, type: 3}
-  m_Name: Encounter_Combat_Shield3_A00_01
-  m_EditorClassIdentifier: 
+  m_Script: {fileID: 11500000, guid: cbded040312fa2a4899a116aea79fd46, type: 3}
+  m_Name: Encounter_Event_DemonicDealer_A00_01
+  m_EditorClassIdentifier: Deviloop::Deviloop.EventEncounter
   EncounterName:
     m_TableReference:
       m_TableCollectionName: GUID:b9ce7a0ae83848d49ba09c791e109edf
     m_TableEntryReference:
-      m_KeyId: 37654450849755136
+      m_KeyId: 37654760930455552
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  EncounterDebugName: 3 shields
-  EncounterIcon: {fileID: 21300000, guid: 8c20fb0f32939f6419c2a92310bdb793, type: 3}
-  enemyTypes:
-  - EnemyData: {fileID: 11400000, guid: 14249861e5fd33c4db475a0452c73609, type: 2}
-    Quantity: 3
-  IsElite: 0
-  DefeatRewards:
-  - {fileID: 11400000, guid: d814729a088f6064399a5d41b97efbcb, type: 2}
+  EncounterDebugName: 'Demonic Dealer '
+  EncounterIcon: {fileID: 21300000, guid: 48c6e06cd32b9e347959551e430f6ff1, type: 3}
+  _eventEncounterData: {fileID: 11400000, guid: 5c4975d2e9fecdf4caae662ae9c0eb49, type: 2}
   references:
     version: 2
     RefIds: []

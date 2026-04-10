@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 37076134170243073
-    m_Localized: 'Accept help \[gain an item\]'
+    m_Localized: 'Accept help \[suffer 5 damage and add broken bottle to your bag\]'
     m_Metadata:
       m_Items: []
   - m_Id: 37076134170243074
@@ -52,7 +52,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 37076134170243079
-    m_Localized: Ignore them and walk past
+    m_Localized: Ignore them and walk past...
     m_Metadata:
       m_Items: []
   - m_Id: 37076134170243080
@@ -191,6 +191,43 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 37365388909785088
     m_Localized: 'Traveler: Let me help you...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37648897251520512
+    m_Localized: 'Traveler: Let me help you...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37648897289269248
+    m_Localized: 'Traveler: psst! Mind lending a hand?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37648897289269249
+    m_Localized: 'Traveler: My babies are scared in these dungeons.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37648897289269250
+    m_Localized: 'Traveler: Could you get them out of here?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37648897289269251
+    m_Localized: 'Traveler: Hand them over to the blacksmith and he know how to help
+      them.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37648897293463552
+    m_Localized: 'Accept \[add 3 seahorses to your bag\]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37648897293463553
+    m_Localized: 'Traveler: I owe you the world!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37648897293463554
+    m_Localized: Ignore them and walk past...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37648897293463555
+    m_Localized: 'Traveler: That was cruel!'
     m_Metadata:
       m_Items: []
   references:

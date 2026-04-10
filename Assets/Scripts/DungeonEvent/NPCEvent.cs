@@ -6,10 +6,12 @@ namespace Deviloop
 {
     public class NPCEvent : MonoBehaviour
     {
-        [SerializeField] private UnityEvent _onStart;
-        [SerializeField] private UnityEvent _onDialogueComplete;
+        [SerializeField] private SpriteRenderer _spriteRenderer;
         [SerializeField] private DialogueRunner _dialogueRunner;
         [SerializeField] private GameObject _dialogueUI;
+        [Space]
+        [SerializeField] private UnityEvent _onStart;
+        [SerializeField] private UnityEvent _onDialogueComplete;
         
         private EventEncounterData _encounterData;
         
@@ -18,6 +20,7 @@ namespace Deviloop
             _onStart?.Invoke();
             _encounterData =  encounterData;
 
+            _spriteRenderer.sprite = encounterData.NPCSprite;
         }
 
         public void OnEnterAnimationEnd()

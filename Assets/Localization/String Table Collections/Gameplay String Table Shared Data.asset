@@ -301,6 +301,42 @@ MonoBehaviour:
     m_Key: material/paper
     m_Metadata:
       m_Items: []
+  - m_Id: 37650278951727104
+    m_Key: card/title/seahorse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37650462892929024
+    m_Key: card/description/seahorse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37654373632618496
+    m_Key: encounter/name/boss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37654450849755136
+    m_Key: encounter/name/normalCombat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37654503010119680
+    m_Key: encounter/name/eliteCombat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37654760930455552
+    m_Key: encounter/name/randomEvent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37654853926563840
+    m_Key: encounter/name/passage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37654983090155520
+    m_Key: encounter/name/shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37655081937317888
+    m_Key: encounter/name/combatWave
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66b9bd769b98cf47b7f2b1b6ec15fed, type: 3}
   m_Name: Encounter_Wave_A00_w01
   m_EditorClassIdentifier: Deviloop::Deviloop.EnemyWaveEncounter
-  EncounterName: enemy wave
+  EncounterName:
+    m_TableReference:
+      m_TableCollectionName: GUID:b9ce7a0ae83848d49ba09c791e109edf
+    m_TableEntryReference:
+      m_KeyId: 37655081937317888
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   EncounterDebugName: enemy wave
   EncounterIcon: {fileID: 21300000, guid: 1cb68716eb8b9d149b0b0f58ea521755, type: 3}
   _delayBetweenSpawns: 1
@@ -23,3 +31,6 @@ MonoBehaviour:
   IsElite: 1
   DefeatRewards:
   - {fileID: 11400000, guid: d814729a088f6064399a5d41b97efbcb, type: 2}
+  references:
+    version: 2
+    RefIds: []

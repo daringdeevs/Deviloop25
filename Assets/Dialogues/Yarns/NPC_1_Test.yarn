@@ -1,11 +1,26 @@
-﻿title: NPC_1_Start
+﻿title: NPC_DemonicDealer_Start
 ---
 Traveler: Greetings, wanderer. These roads can be dangerous alone. #line:039436e 
 Traveler: Let me help you...
 
--> Accept help \[gain an item\] #line:02d837c 
+-> Accept help \[suffer 5 damage and add broken bottle to your bag\] #line:02d837c 
+    <<deal_damage_to_player 5>>
     <<add_item_to_deck a423a676599704f4795f0048c68fc928>>
     Traveler: You're welcome! #line:0e988d4 
--> Ignore them and walk past #line:015d702 
+-> Ignore them and walk past... #line:015d702 
     Traveler: Suit yourself... but beware the enemies ahead. #line:00bbfe6 
+===
+
+title: NPC_Seahorses_Start
+---
+Traveler: psst! Mind lending a hand?
+Traveler: My babies are scared in these dungeons.
+Traveler: Could you get them out of here?
+Traveler: Hand them over to the blacksmith and he know how to help them.
+
+-> Accept \[add 3 seahorses to your bag\]
+    <<add_item_to_deck f7dd6265cf88ae14e9b3d16c9b7e4bd8 3>>
+    Traveler: I owe you the world!
+-> Ignore them and walk past... 
+    Traveler: That was cruel!
 ===

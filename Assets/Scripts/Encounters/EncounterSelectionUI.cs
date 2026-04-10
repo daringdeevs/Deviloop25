@@ -15,7 +15,7 @@ namespace Deviloop
                 if (i < encounters.Count)
                 {
                     EncounterItems[i].gameObject.SetActive(true);
-                    EncounterItems[i].Title.text = encounters[i].EncounterName;
+                    EncounterItems[i].Title.text = encounters[i].EncounterName.GetLocalizedString();
 #if DEBUG
                     EncounterItems[i].DebugTitle.text = "debug: " + encounters[i].EncounterDebugName;
 #else

@@ -1,10 +1,11 @@
 
 using UnityEngine;
+using UnityEngine.Localization;
 
 public abstract class BaseEncounter : ScriptableObject
 {
     //TODO: replace with localized string
-    public string EncounterName;
+    public LocalizedString EncounterName;
     public string EncounterDebugName;
     public Sprite EncounterIcon;
     public abstract void StartEncounter();

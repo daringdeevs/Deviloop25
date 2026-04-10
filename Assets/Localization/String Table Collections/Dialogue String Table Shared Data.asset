@@ -230,6 +230,51 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 3375138069627273598
+  - m_Id: 37648897251520512
+    m_Key: line:7de8994e
+    m_Metadata:
+      m_Items:
+      - rid: 3375138092517687404
+  - m_Id: 37648897289269248
+    m_Key: line:dad1e72f
+    m_Metadata:
+      m_Items:
+      - rid: 3375138092517687405
+  - m_Id: 37648897289269249
+    m_Key: line:4ce1e058
+    m_Metadata:
+      m_Items:
+      - rid: 3375138092517687406
+  - m_Id: 37648897289269250
+    m_Key: line:ddfc5fc8
+    m_Metadata:
+      m_Items:
+      - rid: 3375138092517687407
+  - m_Id: 37648897289269251
+    m_Key: line:4bcc58bf
+    m_Metadata:
+      m_Items:
+      - rid: 3375138092517687408
+  - m_Id: 37648897293463552
+    m_Key: line:fd95b3dd
+    m_Metadata:
+      m_Items:
+      - rid: 3375138092517687409
+  - m_Id: 37648897293463553
+    m_Key: line:6ba5b4aa
+    m_Metadata:
+      m_Items:
+      - rid: 3375138092517687410
+  - m_Id: 37648897293463554
+    m_Key: line:d1f4bd33
+    m_Metadata:
+      m_Items:
+      - rid: 3375138092517687411
+  - m_Id: 37648897293463555
+    m_Key: line:47c4ba44
+    m_Metadata:
+      m_Items:
+      - rid: 3375138092517687412
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -245,12 +290,12 @@ MonoBehaviour:
     - rid: 3375138049161167015
       type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
       data:
-        nodeName: NPC_1_Start
+        nodeName: NPC_DemonicDealer_Start
         tags: []
     - rid: 3375138049161167016
       type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
       data:
-        nodeName: NPC_1_Start
+        nodeName: NPC_DemonicDealer_Start
         tags: []
     - rid: 3375138049161167017
       type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
@@ -260,7 +305,7 @@ MonoBehaviour:
     - rid: 3375138049161167018
       type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
       data:
-        nodeName: NPC_1_Start
+        nodeName: NPC_DemonicDealer_Start
         tags: []
     - rid: 3375138049161167019
       type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
@@ -280,7 +325,7 @@ MonoBehaviour:
     - rid: 3375138049161167022
       type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
       data:
-        nodeName: NPC_1_Start
+        nodeName: NPC_DemonicDealer_Start
         tags: []
     - rid: 3375138049161167023
       type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
@@ -290,7 +335,7 @@ MonoBehaviour:
     - rid: 3375138049161167024
       type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
       data:
-        nodeName: NPC_1_Start
+        nodeName: NPC_DemonicDealer_Start
         tags: []
     - rid: 3375138049161167025
       type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
@@ -456,6 +501,53 @@ MonoBehaviour:
         nodeName: NPC_1_Start
         tags:
         - lastline
+    - rid: 3375138092517687404
+      type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
+      data:
+        nodeName: NPC_DemonicDealer_Start
+        tags:
+        - lastline
+    - rid: 3375138092517687405
+      type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
+      data:
+        nodeName: NPC_Seahorses_Start
+        tags: []
+    - rid: 3375138092517687406
+      type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
+      data:
+        nodeName: NPC_Seahorses_Start
+        tags: []
+    - rid: 3375138092517687407
+      type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
+      data:
+        nodeName: NPC_Seahorses_Start
+        tags: []
+    - rid: 3375138092517687408
+      type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
+      data:
+        nodeName: NPC_Seahorses_Start
+        tags:
+        - lastline
+    - rid: 3375138092517687409
+      type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
+      data:
+        nodeName: NPC_Seahorses_Start
+        tags: []
+    - rid: 3375138092517687410
+      type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
+      data:
+        nodeName: NPC_Seahorses_Start
+        tags: []
+    - rid: 3375138092517687411
+      type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
+      data:
+        nodeName: NPC_Seahorses_Start
+        tags: []
+    - rid: 3375138092517687412
+      type: {class: LineMetadata, ns: Yarn.Unity.UnityLocalization, asm: YarnSpinner.Unity}
+      data:
+        nodeName: NPC_Seahorses_Start
+        tags: []
     - rid: 5144960772876796296
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:

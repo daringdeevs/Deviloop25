@@ -12,7 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727bd9696da0f844f8559ca9f2938627, type: 3}
   m_Name: Encounter_Shop_A00_01
   m_EditorClassIdentifier: 
-  EncounterName: Shop
+  EncounterName:
+    m_TableReference:
+      m_TableCollectionName: GUID:b9ce7a0ae83848d49ba09c791e109edf
+    m_TableEntryReference:
+      m_KeyId: 37654983090155520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   EncounterDebugName: Shop
   EncounterIcon: {fileID: 21300000, guid: 0f14fa8d0a9e029458ba7481c2dcd745, type: 3}
   _shopData: {fileID: 11400000, guid: 027f06d057ad1284aac48b709441355b, type: 2}
+  references:
+    version: 2
+    RefIds: []

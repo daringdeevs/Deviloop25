@@ -8,6 +8,7 @@ namespace Deviloop
     public class EventEncounterData : ScriptableObject
     { 
         public GameObject NPCPrefab;
+        public Sprite NPCSprite;
         public YarnProject YarnProject;
         [YarnNode(nameof(YarnProject))]
         public string StartNodeName = "Start";

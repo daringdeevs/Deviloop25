@@ -247,7 +247,7 @@ MonoBehaviour:
       m_Items:
       - rid: 5144960777497608280
   - m_Id: 18888460557135872
-    m_Localized: Spiked Ball
+    m_Localized: Porcupinefish
     m_Metadata:
       m_Items: []
   - m_Id: 18888548981452800
@@ -343,6 +343,42 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 22235676936024064
     m_Localized: paper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37650278951727104
+    m_Localized: seahorse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37650462892929024
+    m_Localized: "\u201CNeeee-blob-blob!\u201D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37654373632618496
+    m_Localized: boss fight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37654450849755136
+    m_Localized: combat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37654503010119680
+    m_Localized: elite combat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37654760930455552
+    m_Localized: event
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37654853926563840
+    m_Localized: passage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37654983090155520
+    m_Localized: shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37655081937317888
+    m_Localized: raid
     m_Metadata:
       m_Items: []
   references:
